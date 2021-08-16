@@ -26,7 +26,7 @@ const About = () => {
 
                 <Container>
                   <Typography variant='caption'>
-                    Int.Ch. Guess V. Moezel's Oever
+                    Int.Ch. Guess V. Moezel&apos;s Oever
                   </Typography>
                 </Container>
               </Grid>

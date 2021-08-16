@@ -32,7 +32,7 @@ export default function MyApp(props) {
           content='minimum-scale=1, initial-scale=1, width=device-width'
         />
       </Head>
-      <ThemeProvider>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <NavbarTop />
         <Navbar />

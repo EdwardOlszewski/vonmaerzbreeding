@@ -1,99 +1,92 @@
 import { useState } from 'react'
-import navTheme from './themes/navTheme'
+import navTheme from '../themes/navTheme'
 import Image from 'next/image'
 import Link from 'next/link'
+import { withStyles } from '@material-ui/core/styles'
 import {
   AppBar,
   Toolbar,
   IconButton,
-  Typography,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
   Hidden,
   Button,
   Container,
 } from '@material-ui/core'
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import RottMenu from './RottMenu'
 import FrenchBDMenu from './FrenchBDMenu'
-import logo from '../images/logo.png'
+import logo from '../images/sss.png'
+
+import backgroundIMG from '../images/pawBackground.jpg'
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
+import MuiAccordion from '@material-ui/core/Accordion'
 
 const Navbar = () => {
   const classes = navTheme()
 
   const [open, setMobileMenuOpen] = useState(false)
 
+  const [expanded, setExpanded] = useState(true)
+  const [expanded2, setExpanded2] = useState(true)
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false)
+  }
+
   return (
     <div className={classes.root}>
-      <AppBar position='static'>
-        <Toolbar className={classes.Toolbar}>
-          <Container className={classes.logoImage}>
-            <Image src={logo} />
+      <AppBar position='static' className={classes.Toolbar}>
+        <Toolbar>
+          <Container>
+            <Hidden smDown>
+              <Container maxWidth='lg' className={classes.navContainer}>
+                <Link href='/'>
+                  <Button
+                    className={classes.menuButton}
+                    variant='contained'
+                    color='primary'
+                  >
+                    Home
+                  </Button>
+                </Link>
+                <Link href='/about'>
+                  <Button
+                    className={classes.menuButton}
+                    variant='contained'
+                    color='primary'
+                  >
+                    about us
+                  </Button>
+                </Link>
+                <Link href='/contact'>
+                  <Button
+                    className={classes.menuButton}
+                    variant='contained'
+                    color='primary'
+                  >
+                    Contact
+                  </Button>
+                </Link>
+                <Link href='/puppyquestonnaire'>
+                  <Button
+                    className={classes.menuButton}
+                    variant='contained'
+                    color='primary'
+                  >
+                    Puppy Questionnaire
+                  </Button>
+                </Link>
+                <RottMenu />
+                <FrenchBDMenu />
+              </Container>
+            </Hidden>
           </Container>
-
-          <Hidden mdDown>
-            <Container maxWidth='lg' className={classes.navContainer}>
-              <Link href='/'>
-                <Button
-                  className={classes.menuButton}
-                  variant='contained'
-                  color='primary'
-                >
-                  Home
-                </Button>
-              </Link>
-              <Link href='/contact'>
-                <Button
-                  className={classes.menuButton}
-                  variant='contained'
-                  color='primary'
-                >
-                  Contact
-                </Button>
-              </Link>
-              <Link href='/puppyquestonnaire'>
-                <Button
-                  className={classes.menuButton}
-                  variant='contained'
-                  color='primary'
-                >
-                  Puppy Questionnaire
-                </Button>
-              </Link>
-              <RottMenu />
-              <FrenchBDMenu />
-            </Container>
-          </Hidden>
-
-          <Hidden lgUp>
-            <IconButton
-              edge='start'
-              color='inherit'
-              aria-label='menu'
-              onClick={(e) => setMobileMenuOpen(!open)}
-            >
-              {open ? (
-                <MenuOpenRoundedIcon className={classes.hamburgerIcon} />
-              ) : (
-                <MenuRoundedIcon className={classes.hamburgerIcon} />
-              )}
-            </IconButton>
-          </Hidden>
         </Toolbar>
 
         <Hidden lgUp>
-          <Accordion square expanded={open}>
-            <AccordionSummary className={classes.mobileDisplay} />
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+          <RottMenu />
         </Hidden>
       </AppBar>
     </div>
@@ -103,40 +96,18 @@ export default Navbar
 
 /*
 
- <Grid container className={classes.navContainer} spacing={0}>
-              <Grid item xs={2}>
-                <Link href='/'>
-                  <ListItem button className={classes.navLink}>
-                    <ListItemText primary='Home' />
-                  </ListItem>
-                </Link>
-              </Grid>
-              <Grid item xs={2}>
-                <Link href='/contact'>
-                  <ListItem button className={classes.navLink}>
-                    <ListItemText primary='Contact Us' />
-                  </ListItem>
-                </Link>
-              </Grid>
-              <Grid item xs={3}>
-                <Link href='/puppyquestonnaire'>
-                  <ListItem button className={classes.navLink}>
-                    <ListItemText primary='Puppy Questionnaire' />
-                  </ListItem>
-                </Link>
-              </Grid>
-              <Grid item xs={2}>
-                <ListItem className={classes.navLink}>
-                  <RottMenu />
-                </ListItem>
-              </Grid>
-              <Grid item xs={3}>
-                <ListItem>
-                  <FrenchBDMenu className={classes.navLink} />
-                </ListItem>
-              </Grid>
-            </Grid>
-
-
+ <Accordion
+                  square
+                  expanded={expanded2}
+                  onClick={() => setExpanded2(!expanded2)}
+                >
+                  <AccordionSummary
+                    aria-controls='panel2d-content'
+                    id='panel2d-header'
+                  >
+                    <Typography>Brood Bitches</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>Hu</AccordionDetails>
+                </Accordion>
 
 */

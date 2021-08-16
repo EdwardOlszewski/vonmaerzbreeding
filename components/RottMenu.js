@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import navTheme from './themes/navTheme'
+import navTheme from '../themes/navTheme'
 import {
   Button,
   Menu,
@@ -112,6 +112,7 @@ const RottMenu = () => {
             </ListItem>
           </List>
         </StyledMenuItem>
+
         <StyledMenuItem disabled={!openBrood}>
           <Collapse in={openBrood} timeout='auto' unmountOnExit>
             <Link href='/rottweilers/studdogs/brood1'>
@@ -155,7 +156,7 @@ const RottMenu = () => {
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/retiredvonmarez'>
+          <Link href='/rottweilers/retiredvonmaerz'>
             <ListItemText primary='Retired Von Marez' />
           </Link>
         </StyledMenuItem>

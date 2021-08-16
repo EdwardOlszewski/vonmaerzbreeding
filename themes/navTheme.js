@@ -9,36 +9,45 @@ const navTheme = makeStyles((theme) => ({
     color: 'black',
     boxShadow: 'none',
     '&:hover': {
-      background: '#E4DFDA',
+      background: 'none',
       boxShadow: 'none',
+      color: 'gray',
     },
   },
 
   title: {
     flexGrow: 1,
   },
-  navContainer: {
-    width: '50rem',
-    textAlign: 'right',
+  navContainerTop: {
+    textAlign: 'center',
     margin: 'auto',
-    marginRight: 0,
+  },
+  navContainer: {
+    textAlign: 'center',
+    margin: 'auto',
+    marginTop: '-1.5rem',
+    width: '102%',
   },
   navLink: {
     textAlign: 'center',
     margin: 'auto',
   },
-  logoImage: {
-    marginLeft: 0,
-    margin: 'auto',
-    textAlign: 'left',
-    width: '30rem',
+  navImage: {
+    width: '85%',
+    display: 'inline-block',
+  },
+  Toolbar1: {
+    backgroundColor: '#BFAFA6',
+    padding: '5px',
   },
   Toolbar: {
-    backgroundColor: '#E4DFDA',
+    backgroundColor: '#AA968A',
+    height: '2.5rem',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
   },
   hamburgerIcon: {
     color: 'black',
-    fontSize: '3rem',
+    fontSize: '2rem',
   },
   //Accordion Style
   mobileDisplay: {
@@ -53,6 +62,19 @@ const navTheme = makeStyles((theme) => ({
     padding: 0,
   },
   dropDownOption2: { marginLeft: '10px' },
+
+  //Footer
+  btmNav: {
+    backgroundColor: '#f4f5f6',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
+    marginTop: '1rem',
+    height: '100%',
+    margin: 'auto',
+    textAlign: 'center',
+  },
+  copyright: {
+    color: 'gray',
+  },
 }))
 
 export default navTheme

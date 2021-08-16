@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import navTheme from './themes/navTheme'
+import navTheme from '../themes/navTheme'
 import {
   Button,
   Menu,
@@ -155,7 +155,7 @@ const FrenchBDMenu = () => {
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/frenchbulldogs/retiredvonmarez'>
+          <Link href='/frenchbulldogs/retiredvonmaerz'>
             <ListItemText primary='Retired Von Marez' />
           </Link>
         </StyledMenuItem>

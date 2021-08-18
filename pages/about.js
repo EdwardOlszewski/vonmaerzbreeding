@@ -12,18 +12,18 @@ import {
 import Meta from '../components/Meta'
 
 const About = (props) => {
-  const classes = pagesTheme()
+  const theme = useTheme().pagesTheme
 
   return (
     <div style={{ paddingBottom: '5rem' }}>
       <Meta title={'About Us'} />
-      <Typography variant='h3' className={classes.pageHeading}>
+      <Typography variant='h3' style={theme.pageHeading}>
         About Us
       </Typography>
 
       <Grid container justifyContent='center'>
         <Grid item xs={12} lg={8} xl={7}>
-          <Container className={classes.imgContainer}>
+          <Container style={theme.imgContainer}>
             <Grid xs={12} container>
               <Grid xs={6} item>
                 <div style={{ padding: '5px' }}>

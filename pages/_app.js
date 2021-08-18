@@ -1,19 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import { ThemeProvider } from '@material-ui/core/styles'
+import { ThemeProvider, useTheme } from '@material-ui/core/styles'
 import { Paper } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../src/theme'
 import NavbarTop from '../components/NavbarTop'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import layoutTheme from '../themes/layoutTheme'
 import '../styles/globals.css'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props
-  const classes = layoutTheme()
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -36,7 +34,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavbarTop />
         <Navbar />
-        <Paper className={classes.root}>
+        <Paper style={theme.layoutTheme.root}>
           <Component {...pageProps} />
         </Paper>
 

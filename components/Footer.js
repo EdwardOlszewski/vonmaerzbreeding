@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import navTheme from '../themes/navTheme'
 import {
   BottomNavigation,
   BottomNavigationAction,
   Container,
   Typography,
   Grid,
+  useTheme,
 } from '@material-ui/core'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import EmailIcon from '@material-ui/icons/Email'
@@ -14,31 +14,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
-  const classes = navTheme()
+  // assign theme to use for styles
+  const theme = useTheme().navTheme
+
   const currentYear = new Date()
 
   return (
-    <BottomNavigation className={classes.btmNav}>
+    <BottomNavigation style={theme.btmNav}>
       <Grid container justifyContent='center'>
         <Grid item xs={12}>
           <BottomNavigationAction
-            className={classes.menuButton}
+            style={theme.menuButton}
             icon={<FontAwesomeIcon icon={faFacebook} size='2x' />}
           />
 
           <BottomNavigationAction
-            className={classes.menuButton}
+            style={theme.menuButton}
             icon={<EmailIcon />}
           />
           <BottomNavigationAction
-            className={classes.menuButton}
+            style={theme.menuButton}
             icon={<PhoneIcon />}
           />
         </Grid>
 
         <Grid item xs={12} style={{ marginTop: '.5rem' }}>
           <Container>
-            <Typography variant='caption' className={classes.copyright}>
+            <Typography variant='caption' style={theme.copyright}>
               © {currentYear.getFullYear()} VON MAERZ. ALL RIGHTS RESERVED.
             </Typography>
           </Container>

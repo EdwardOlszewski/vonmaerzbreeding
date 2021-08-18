@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import navTheme from '../themes/navTheme'
 import Image from 'next/image'
 import Link from 'next/link'
-import { withStyles } from '@material-ui/core/styles'
 import {
   AppBar,
   Toolbar,
@@ -10,6 +8,7 @@ import {
   Hidden,
   Button,
   Container,
+  useTheme,
 } from '@material-ui/core'
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
@@ -24,7 +23,8 @@ import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
 import MuiAccordion from '@material-ui/core/Accordion'
 
 const Navbar = () => {
-  const classes = navTheme()
+  // assign theme to use for styles
+  const theme = useTheme().navTheme
 
   const [open, setMobileMenuOpen] = useState(false)
 
@@ -36,15 +36,15 @@ const Navbar = () => {
   }
 
   return (
-    <div className={classes.root}>
-      <AppBar position='static' className={classes.Toolbar}>
+    <div className={theme.root}>
+      <AppBar position='static' style={theme.Toolbar}>
         <Toolbar>
           <Container>
             <Hidden smDown>
-              <Container maxWidth='lg' className={classes.navContainer}>
+              <Container maxWidth='lg' style={theme.navContainer}>
                 <Link href='/'>
                   <Button
-                    className={classes.menuButton}
+                    style={theme.menuButton}
                     variant='contained'
                     color='primary'
                   >
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/about'>
                   <Button
-                    className={classes.menuButton}
+                    style={theme.menuButton}
                     variant='contained'
                     color='primary'
                   >
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/contact'>
                   <Button
-                    className={classes.menuButton}
+                    style={theme.menuButton}
                     variant='contained'
                     color='primary'
                   >
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/puppyquestonnaire'>
                   <Button
-                    className={classes.menuButton}
+                    style={theme.menuButton}
                     variant='contained'
                     color='primary'
                   >

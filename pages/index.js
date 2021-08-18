@@ -1,46 +1,37 @@
-import Image from 'next/image'
-import pagesTheme from '../styles/pagesTheme'
-import { Grid, Typography, Button, Hidden } from '@material-ui/core'
-import logo from '../images/longLogo2.png'
-import logo2 from '../images/logo.png'
+import {
+  Grid,
+  Typography,
+  Button,
+  useTheme,
+  makeStyles,
+} from '@material-ui/core'
 import Meta from '../components/Meta'
 
-export default function Home() {
-  const classes = pagesTheme()
+export default function Home(props) {
+  const theme = useTheme().pagesTheme
 
   return (
     <>
       <Meta title={'Home'} />
-      <Typography variant='h3' className={classes.pageHeading}></Typography>
+      <Typography variant='h3' style={theme.pageHeading}></Typography>
       <Grid container>
-        <Grid item xs={12} className={classes.indexContainer}>
+        <Grid item xs={12} style={theme.indexContainer}>
           <div
             style={{
               display: 'inline-block',
               textAlign: 'left',
             }}
           >
-            <Typography variant='h4' className={classes.indexText}>
+            <Typography variant='h4' style={theme.indexText}>
               Frenchie & Rottweiler Puppies Fall&Summer 2021
               <br />
               Interested in a pet or breed quality puppy?
             </Typography>
 
-            <Button className={classes.contactButton}>Contact Us</Button>
+            <Button style={theme.contactButton}>Contact Us</Button>
           </div>
         </Grid>
       </Grid>
     </>
   )
 }
-
-/*
-
-  <Typography>
-            Frenchie & Rottweiler Puppies Fall&Summer 2021
-          </Typography>
-
-          <Typography variant='h4' className={classes.indexText}>
-            Interested in a pet or breed quality puppy?
-          </Typography>
-*/

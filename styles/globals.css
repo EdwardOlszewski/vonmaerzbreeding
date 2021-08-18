@@ -20,3 +20,12 @@ a {
 .toggleButton {
   height: 100%;
 }
+
+.contactButton {
+  background-color: #439775;
+  margin-left: 10px;
+  margin-top: 2rem;
+}
+.contactButton:hover {
+  background: #56c397;
+}

@@ -1,6 +1,6 @@
-import { makeStyles } from '@material-ui/core'
+import { createTheme } from '@material-ui/core/styles'
 
-const navTheme = makeStyles((theme) => ({
+const pagesTheme = createTheme({
   //Home Screen
   contactButton: {
     backgroundColor: '#439775',
@@ -9,6 +9,9 @@ const navTheme = makeStyles((theme) => ({
     '&:hover': {
       background: '#56c397',
     },
+  },
+  contactButtonHover: {
+    background: '#56c397',
   },
 
   pageHeading: {
@@ -36,6 +39,6 @@ const navTheme = makeStyles((theme) => ({
   indexText: {
     padding: '10px',
   },
-}))
+})
 
-export default navTheme
+export default pagesTheme

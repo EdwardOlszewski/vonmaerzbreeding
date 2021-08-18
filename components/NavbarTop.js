@@ -1,43 +1,26 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { withStyles } from '@material-ui/core/styles'
 import {
   AppBar,
   Toolbar,
   Hidden,
-  Button,
   Container,
   Typography,
   IconButton,
-  makeStyles,
   useTheme,
-  createStyles,
 } from '@material-ui/core'
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import RottMenu from './RottMenu'
-import FrenchBDMenu from './FrenchBDMenu'
 import logo from '../images/logo.png'
 
-import backgroundIMG from '../images/pawBackground.jpg'
-import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
-import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
-import MuiAccordion from '@material-ui/core/Accordion'
-
 const Navbar = (props) => {
-  const theme = useTheme()
+  // assign theme to use for styles
+  const theme = useTheme().navTheme
 
+  // assign variables
   const [open, setMobileMenuOpen] = useState(false)
 
-  const [expanded, setExpanded] = useState(true)
-  const [expanded2, setExpanded2] = useState(true)
-
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false)
-  }
-
+  // return
   return (
     <div className='root'>
       <AppBar position='static' style={theme.Toolbar1}>

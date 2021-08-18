@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import navTheme from '../themes/navTheme'
 import {
   Button,
   Menu,
@@ -9,6 +8,7 @@ import {
   ListItem,
   ListItemText,
   Collapse,
+  useTheme,
 } from '@material-ui/core'
 import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
@@ -49,7 +49,8 @@ const StyledMenuItem = withStyles((theme) => ({
 }))(MenuItem)
 
 const FrenchBDMenu = () => {
-  const classes = navTheme()
+  // assign theme to use for styles
+  const theme = useTheme().navTheme
 
   const [anchorEl, setAnchorEl] = useState(null)
   const [studOpen, setStudOpen] = useState(false)
@@ -67,7 +68,7 @@ const FrenchBDMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <Button
-        className={classes.menuButton}
+        style={theme.menuButton}
         aria-controls='customized-menu'
         aria-haspopup='true'
         variant='contained'
@@ -87,7 +88,7 @@ const FrenchBDMenu = () => {
       >
         <StyledMenuItem onClick={() => setStudOpen(!studOpen)}>
           <List>
-            <ListItem className={classes.dropDownOption}>
+            <ListItem style={theme.dropDownOption}>
               <ListItemText primary='Stud Dogs' />
               {studOpen ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
@@ -97,7 +98,7 @@ const FrenchBDMenu = () => {
           <Collapse in={studOpen} timeout='auto' unmountOnExit>
             <Link href='/frenchbulldogs/studdogs/studdog1'>
               <ListItemText
-                className={classes.dropDownOption2}
+                style={theme.dropDownOption2}
                 primary='Stud Dog 1'
               />
             </Link>
@@ -106,7 +107,7 @@ const FrenchBDMenu = () => {
 
         <StyledMenuItem onClick={() => setOpenBrood(!openBrood)}>
           <List>
-            <ListItem className={classes.dropDownOption}>
+            <ListItem style={theme.dropDownOption}>
               <ListItemText primary='Brood Bitches' />
               {openBrood ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
@@ -115,17 +116,14 @@ const FrenchBDMenu = () => {
         <StyledMenuItem disabled={!openBrood}>
           <Collapse in={openBrood} timeout='auto' unmountOnExit>
             <Link href='/frenchbulldogs/studdogs/brood1'>
-              <ListItemText
-                className={classes.dropDownOption2}
-                primary='brood1'
-              />
+              <ListItemText style={theme.dropDownOption2} primary='brood1' />
             </Link>
           </Collapse>
         </StyledMenuItem>
 
         <StyledMenuItem onClick={() => setOpenLitter(!openLitter)}>
           <List>
-            <ListItem className={classes.dropDownOption}>
+            <ListItem style={theme.dropDownOption}>
               <ListItemText primary='Puppy Litters' />
               {openLitter ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
@@ -135,7 +133,7 @@ const FrenchBDMenu = () => {
           <Collapse in={openLitter} timeout='auto' unmountOnExit>
             <Link href='/frenchbulldogs/openLitter/openLitter1'>
               <ListItemText
-                className={classes.dropDownOption2}
+                style={theme.dropDownOption2}
                 primary='openLitter1'
               />
             </Link>

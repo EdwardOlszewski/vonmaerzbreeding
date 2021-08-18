@@ -2,10 +2,16 @@ import Image from 'next/image'
 import pagesTheme from '../styles/pagesTheme'
 import dogPic from '../images/headerDog.png'
 import familyPic from '../images/headerFamily.png'
-import { Grid, Typography, Container } from '@material-ui/core'
+import {
+  Grid,
+  Typography,
+  Container,
+  makeStyles,
+  useTheme,
+} from '@material-ui/core'
 import Meta from '../components/Meta'
 
-const About = () => {
+const About = (props) => {
   const classes = pagesTheme()
 
   return (

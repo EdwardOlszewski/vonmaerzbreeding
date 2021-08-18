@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import navTheme from '../themes/navTheme'
 import Image from 'next/image'
 import Link from 'next/link'
 import { withStyles } from '@material-ui/core/styles'
@@ -11,6 +10,9 @@ import {
   Container,
   Typography,
   IconButton,
+  makeStyles,
+  useTheme,
+  createStyles,
 } from '@material-ui/core'
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
@@ -24,8 +26,8 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
 import MuiAccordion from '@material-ui/core/Accordion'
 
-const Navbar = () => {
-  const classes = navTheme()
+const Navbar = (props) => {
+  const theme = useTheme()
 
   const [open, setMobileMenuOpen] = useState(false)
 
@@ -37,12 +39,12 @@ const Navbar = () => {
   }
 
   return (
-    <div className={classes.root}>
-      <AppBar position='static' className={classes.Toolbar1}>
+    <div className='root'>
+      <AppBar position='static' style={theme.Toolbar1}>
         <Toolbar>
           <Container>
-            <Typography variant='h5' className={classes.navContainerTop}>
-              <Container className={classes.navImage}>
+            <Typography variant='h5' style={theme.navContainerTop}>
+              <Container className='navImage'>
                 <Image src={logo} />
               </Container>
               <Hidden mdUp>
@@ -54,9 +56,9 @@ const Navbar = () => {
                   style={{ marginTop: '-3rem' }}
                 >
                   {open ? (
-                    <MenuOpenRoundedIcon className={classes.hamburgerIcon} />
+                    <MenuOpenRoundedIcon style={theme.hamburgerIcon} />
                   ) : (
-                    <MenuRoundedIcon className={classes.hamburgerIcon} />
+                    <MenuRoundedIcon style={theme.hamburgerIcon} />
                   )}
                 </IconButton>
               </Hidden>

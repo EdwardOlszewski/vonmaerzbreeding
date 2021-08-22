@@ -53,8 +53,28 @@ const MobileImageLine = ({ title, itemData }) => {
         {itemData.map((item) => (
           <ImageListItem
             key={item.img}
-            rows={winSize.width > 1600 ? 2 : winSize.width > 700 ? 2 : 2.5}
-            cols={winSize.width > 1600 ? 2 : winSize.width > 700 ? 4 : 8}
+            rows={
+              winSize.width > 1600
+                ? 2
+                : winSize.width > 1000
+                ? 2.5
+                : winSize.width > 700
+                ? 2
+                : winSize.width > 300
+                ? 1.5
+                : winSize.width > 100
+                ? 1
+                : 1.5
+            }
+            cols={
+              winSize.width > 1600
+                ? 2
+                : winSize.width > 800
+                ? 4
+                : winSize.width > 500
+                ? 4
+                : 8
+            }
           >
             <Image src={item.img} alt={item.title} layout='fill' />
             <ImageListItemBar

@@ -28,7 +28,7 @@ const About = () => {
             <Grid xs={12} container>
               <Grid xs={6} item>
                 <div style={{ padding: '5px' }}>
-                  <Image src={dogPic} />
+                  <Image src={dogPic} alt={'dogPic1'} />
                 </div>
 
                 <Container>
@@ -40,7 +40,7 @@ const About = () => {
 
               <Grid xs={6} item>
                 <div style={{ padding: '5px' }}>
-                  <Image src={familyPic} />
+                  <Image src={familyPic} alt={'dogPic2'} />
                 </div>
                 <Container>
                   <Typography variant='caption'>

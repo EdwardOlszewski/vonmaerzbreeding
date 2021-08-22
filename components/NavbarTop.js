@@ -28,7 +28,7 @@ const Navbar = (props) => {
           <Container>
             <Typography variant='h5' style={theme.navContainerTop}>
               <Container className='navImage'>
-                <Image src={logo} />
+                <Image src={logo} alt={'navbarImage'} />
               </Container>
               <Hidden mdUp>
                 <IconButton

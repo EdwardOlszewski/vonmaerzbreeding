@@ -51,7 +51,8 @@ const pagesTheme = createTheme({
   },
 
   divider: {
-    margin: '2rem',
+    marginTop: '3rem',
+    marginBottom: '3rem',
     opacity: '50%',
   },
 })

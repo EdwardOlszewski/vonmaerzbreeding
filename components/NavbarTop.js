@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core'
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
-import logo from '../images/logo.png'
+import logo from '../public/logo.png'
 
 const Navbar = (props) => {
   // assign theme to use for styles

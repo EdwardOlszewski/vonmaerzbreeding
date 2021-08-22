@@ -76,7 +76,7 @@ const FrenchBDMenu = () => {
         color='primary'
         onClick={handleClick}
       >
-        French Bull Dogs
+        French Bulldogs
         <ExpandMoreIcon />
       </Button>
 
@@ -87,39 +87,16 @@ const FrenchBDMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem onClick={() => setStudOpen(!studOpen)}>
-          <List>
-            <ListItem style={theme.dropDownOption}>
-              <ListItemText primary='Stud Dogs' />
-              {studOpen ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-          </List>
-        </StyledMenuItem>
-        <StyledMenuItem disabled={!studOpen}>
-          <Collapse in={studOpen} timeout='auto' unmountOnExit>
-            <Link href='/frenchbulldogs/studdogs/studdog1'>
-              <ListItemText
-                style={theme.dropDownOption2}
-                primary='Stud Dog 1'
-              />
-            </Link>
-          </Collapse>
+        <StyledMenuItem>
+          <Link href='/frenchbulldogs/studdogs'>
+            <ListItemText primary='Stud Dogs' />
+          </Link>
         </StyledMenuItem>
 
-        <StyledMenuItem onClick={() => setOpenBrood(!openBrood)}>
-          <List>
-            <ListItem style={theme.dropDownOption}>
-              <ListItemText primary='Brood Bitches' />
-              {openBrood ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-          </List>
-        </StyledMenuItem>
-        <StyledMenuItem disabled={!openBrood}>
-          <Collapse in={openBrood} timeout='auto' unmountOnExit>
-            <Link href='/frenchbulldogs/studdogs/brood1'>
-              <ListItemText style={theme.dropDownOption2} primary='brood1' />
-            </Link>
-          </Collapse>
+        <StyledMenuItem>
+          <Link href='/frenchbulldogs/broodbitches'>
+            <ListItemText primary='Brood Bitches' />
+          </Link>
         </StyledMenuItem>
 
         <StyledMenuItem onClick={() => setOpenLitter(!openLitter)}>
@@ -130,6 +107,7 @@ const FrenchBDMenu = () => {
             </ListItem>
           </List>
         </StyledMenuItem>
+
         <StyledMenuItem disabled={!openLitter}>
           <Collapse in={openLitter} timeout='auto' unmountOnExit>
             <Link href='/frenchbulldogs/openLitter/openLitter1'>
@@ -142,7 +120,11 @@ const FrenchBDMenu = () => {
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/frenchbulldogs/puppycontract'>
+          <Link
+            href='/VonMaerzFrenchBullDogContract.pdf'
+            target='_blank'
+            download
+          >
             <ListItemText primary='Puppy Contract' />
           </Link>
         </StyledMenuItem>

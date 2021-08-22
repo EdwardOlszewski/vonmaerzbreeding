@@ -10,8 +10,6 @@ export default function RottBroodBitchesHome() {
       <Typography variant='h3' style={theme.pageHeading}>
         Brood Bitches
       </Typography>
-
-      <MobileImageList />
     </div>
   )
 }

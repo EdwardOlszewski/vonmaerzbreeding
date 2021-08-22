@@ -9,7 +9,7 @@ const layoutTheme = createTheme({
     marginBottom: '3rem',
     paddingLeft: '1rem',
     paddingRight: '1rem',
-    width: '98%',
+    width: '95%',
   },
 })
 

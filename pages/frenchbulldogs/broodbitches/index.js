@@ -1,19 +1,15 @@
 import { Typography, useTheme } from '@material-ui/core'
 import Meta from '../../../components/Meta'
 import MobileImageList from '../../../components/MobileImageLine'
-import retiredDogsData from '../../../data/retiredDogsData'
 
-export default function RetiredRottHome() {
+export default function RottBroodBitchesHome() {
   const theme = useTheme().pagesTheme
-
   return (
     <div className='mainContainer'>
-      <Meta title={'Retired Rottweilers'} />
+      <Meta title={'Retired Von Maerz Rottweilers'} />
       <Typography variant='h3' style={theme.pageHeading}>
-        Retired French Bulldogs
+        French Bull Dog Brood Bitches
       </Typography>
-
-      <MobileImageList itemData={retiredDogsData} />
     </div>
   )
 }

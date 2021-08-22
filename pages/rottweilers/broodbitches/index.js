@@ -1,13 +1,9 @@
-import Image from 'next/image'
-import vratedBrass from '../../../images/vratedBrass.jpg'
-import vratedIss from '../../../images/vratedIss.jpg'
 import { Typography, useTheme } from '@material-ui/core'
 import Meta from '../../../components/Meta'
 import MobileImageList from '../../../components/MobileImageLine'
 
-const index = () => {
+export default function index() {
   const theme = useTheme().pagesTheme
-
   return (
     <div className='mainContainer'>
       <Meta title={'Retired Von Maerz Rottweilers'} />
@@ -19,5 +15,3 @@ const index = () => {
     </div>
   )
 }
-
-export default index

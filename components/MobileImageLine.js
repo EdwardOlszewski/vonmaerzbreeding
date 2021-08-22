@@ -5,6 +5,7 @@ import ImageListItem from '@material-ui/core/ImageListItem'
 import ImageListItemBar from '@material-ui/core/ImageListItemBar'
 import itemData from '../data/itemData'
 import WindowSize from './WindowSize'
+import Image from 'next/image'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,7 +45,13 @@ const MobileImageLine = (props) => {
             cols={winSize.width > 1300 ? 2 : winSize.width > 700 ? 3 : 6}
             rows={2}
           >
-            <img src={item.img} alt={item.title} className={classes.image} />
+            <Image
+              src={item.img}
+              alt={item.title}
+              width={'100%'}
+              height={'100%'}
+              layout='responsive'
+            />
             <ImageListItemBar
               title={item.title}
               subtitle={<span>{item.subTitle}</span>}

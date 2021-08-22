@@ -1,9 +1,15 @@
-const index = () => {
+import { Typography, useTheme } from '@material-ui/core'
+import Meta from '../../../components/Meta'
+
+export default function RottPuppyHome() {
+  const theme = useTheme().pagesTheme
+
   return (
     <div className='mainContainer'>
-      <h1>Rottweiler Puppy Litters</h1>
+      <Meta title={'Rottweiler Puppys'} />
+      <Typography variant='h3' style={theme.pageHeading}>
+        Rottweiler Puppys
+      </Typography>
     </div>
   )
 }
-
-export default index

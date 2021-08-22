@@ -2,7 +2,7 @@ import { Typography, useTheme } from '@material-ui/core'
 import Meta from '../../../components/Meta'
 import MobileImageList from '../../../components/MobileImageLine'
 
-export default function index() {
+export default function RottBroodBitchesHome() {
   const theme = useTheme().pagesTheme
   return (
     <div className='mainContainer'>

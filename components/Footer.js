@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   BottomNavigation,
   BottomNavigationAction,
@@ -7,7 +6,6 @@ import {
   Grid,
   useTheme,
 } from '@material-ui/core'
-import FacebookIcon from '@material-ui/icons/Facebook'
 import EmailIcon from '@material-ui/icons/Email'
 import PhoneIcon from '@material-ui/icons/Phone'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

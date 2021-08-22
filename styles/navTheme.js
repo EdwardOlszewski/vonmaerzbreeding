@@ -43,7 +43,7 @@ const navTheme = createTheme({
   Toolbar: {
     backgroundColor: '#AA968A',
     height: '2.5rem',
-    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
   },
   hamburgerIcon: {
     color: 'black',
@@ -66,7 +66,7 @@ const navTheme = createTheme({
   //Footer
   btmNav: {
     backgroundColor: '#f4f5f6',
-    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
     marginTop: '1rem',
     height: '100%',
     margin: 'auto',

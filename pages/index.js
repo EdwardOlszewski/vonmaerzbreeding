@@ -28,7 +28,7 @@ export default function Home(props) {
               Interested in a pet or breed quality puppy?
             </Typography>
 
-            <Button className='contactButton' style={theme.contactButton}>
+            <Button className='Button' style={theme.contactButton}>
               Contact Us
             </Button>
           </div>

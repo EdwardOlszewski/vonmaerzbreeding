@@ -68,6 +68,7 @@ const FrenchBDMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <Button
+        className='Button'
         style={theme.menuButton}
         aria-controls='customized-menu'
         aria-haspopup='true'

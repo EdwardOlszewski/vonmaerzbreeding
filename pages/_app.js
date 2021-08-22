@@ -34,7 +34,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavbarTop />
         <Navbar />
-        <Paper style={theme.layoutTheme.root}>
+        <Paper style={theme.layoutTheme.root} elevation={0}>
           <Component {...pageProps} />
         </Paper>
 

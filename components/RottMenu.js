@@ -68,6 +68,7 @@ const RottMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <Button
+        className='Button'
         style={theme.menuButton}
         aria-controls='customized-menu'
         aria-haspopup='true'
@@ -86,40 +87,16 @@ const RottMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem onClick={() => setStudOpen(!studOpen)}>
-          <List>
-            <ListItem style={theme.dropDownOption}>
-              <ListItemText primary='Stud Dogs' />
-              {studOpen ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-          </List>
-        </StyledMenuItem>
-        <StyledMenuItem disabled={!studOpen}>
-          <Collapse in={studOpen} timeout='auto' unmountOnExit>
-            <Link href='/rottweilers/studdogs/studdog1'>
-              <ListItemText
-                style={theme.dropDownOption2}
-                primary='Stud Dog 1'
-              />
-            </Link>
-          </Collapse>
+        <StyledMenuItem>
+          <Link href='/rottweilers/studdogs'>
+            <ListItemText primary='Stud Dogs' />
+          </Link>
         </StyledMenuItem>
 
-        <StyledMenuItem onClick={() => setOpenBrood(!openBrood)}>
-          <List>
-            <ListItem style={theme.dropDownOption}>
-              <ListItemText primary='Brood Bitches' />
-              {openBrood ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-          </List>
-        </StyledMenuItem>
-
-        <StyledMenuItem disabled={!openBrood}>
-          <Collapse in={openBrood} timeout='auto' unmountOnExit>
-            <Link href='/rottweilers/studdogs/brood1'>
-              <ListItemText style={theme.dropDownOption2} primary='brood1' />
-            </Link>
-          </Collapse>
+        <StyledMenuItem>
+          <Link href='/rottweilers/broodbitches'>
+            <ListItemText primary='Brood Bitches' />
+          </Link>
         </StyledMenuItem>
 
         <StyledMenuItem onClick={() => setOpenLitter(!openLitter)}>
@@ -130,6 +107,7 @@ const RottMenu = () => {
             </ListItem>
           </List>
         </StyledMenuItem>
+
         <StyledMenuItem disabled={!openLitter}>
           <Collapse in={openLitter} timeout='auto' unmountOnExit>
             <Link href='/rottweilers/openLitter/openLitter1'>
@@ -142,7 +120,7 @@ const RottMenu = () => {
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/puppycontract'>
+          <Link href='/VonMaerzRottweilerContract.pdf' target='_blank' download>
             <ListItemText primary='Puppy Contract' />
           </Link>
         </StyledMenuItem>

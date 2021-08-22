@@ -44,6 +44,7 @@ const Navbar = () => {
               <Container maxWidth='lg' style={theme.navContainer}>
                 <Link href='/'>
                   <Button
+                    className='Button'
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
@@ -53,6 +54,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/about'>
                   <Button
+                    className='Button'
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
@@ -62,6 +64,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/contact'>
                   <Button
+                    className='Button'
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
@@ -71,6 +74,7 @@ const Navbar = () => {
                 </Link>
                 <Link href='/puppyquestonnaire'>
                   <Button
+                    className='Button'
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'

@@ -1,21 +1,22 @@
 import Image from 'next/image'
-import pagesTheme from '../styles/pagesTheme'
 import dogPic from '../images/headerDog.png'
 import familyPic from '../images/headerFamily.png'
 import {
   Grid,
   Typography,
   Container,
-  makeStyles,
   useTheme,
+  Card,
+  CardContent,
+  CardMedia,
 } from '@material-ui/core'
 import Meta from '../components/Meta'
 
-const About = (props) => {
+const About = () => {
   const theme = useTheme().pagesTheme
 
   return (
-    <div style={{ paddingBottom: '5rem' }}>
+    <div className='mainContainer'>
       <Meta title={'About Us'} />
       <Typography variant='h3' style={theme.pageHeading}>
         About Us

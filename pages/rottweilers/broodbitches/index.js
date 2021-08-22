@@ -1,16 +1,9 @@
 import Image from 'next/image'
-import {
-  Grid,
-  Typography,
-  Container,
-  useTheme,
-  Divider,
-  Card,
-  CardContent,
-  CardMedia,
-  Paper,
-} from '@material-ui/core'
+import vratedBrass from '../../../images/vratedBrass.jpg'
+import vratedIss from '../../../images/vratedIss.jpg'
+import { Typography, useTheme } from '@material-ui/core'
 import Meta from '../../../components/Meta'
+import MobileImageList from '../../../components/MobileImageLine'
 
 const index = () => {
   const theme = useTheme().pagesTheme
@@ -19,10 +12,10 @@ const index = () => {
     <div className='mainContainer'>
       <Meta title={'Retired Von Maerz Rottweilers'} />
       <Typography variant='h3' style={theme.pageHeading}>
-        Rottweilers Puppy Contract
+        Brood Bitches
       </Typography>
 
-      <Container style={theme.imgContainer}></Container>
+      <MobileImageList />
     </div>
   )
 }

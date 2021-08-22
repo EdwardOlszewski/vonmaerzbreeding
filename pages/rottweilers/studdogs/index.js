@@ -19,7 +19,11 @@ const index = () => {
     <div className='mainContainer'>
       <Meta title={'Retired Von Maerz Rottweilers'} />
       <Typography variant='h3' style={theme.pageHeading}>
-        Rottweilers Puppy Contract
+        Rottweilers Stud Dogs
+      </Typography>
+
+      <Typography variant='h5' style={theme.pageHeading}>
+        Currently None to display
       </Typography>
 
       <Container style={theme.imgContainer}></Container>

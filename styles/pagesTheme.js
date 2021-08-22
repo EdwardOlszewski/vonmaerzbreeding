@@ -19,6 +19,7 @@ const pagesTheme = createTheme({
     margin: 'auto',
     padding: '1rem',
     marginTop: '-4rem',
+    marginBottom: '1rem',
   },
   logoHeading: {
     textAlign: 'center',
@@ -29,15 +30,29 @@ const pagesTheme = createTheme({
   imgContainer: {
     margin: 'auto',
     textAlign: 'center',
-    padding: '1rem',
+    width: '100%',
   },
   aboutImg: {
     marginRight: '1rem',
   },
-  indexContainer: { textAlign: 'center', marginTop: '2rem' },
+  indexContainer: {
+    textAlign: 'center',
+    marginTop: '2rem',
+  },
 
   indexText: {
     padding: '10px',
+  },
+
+  imgGrid: {
+    margin: '5px',
+    textAlign: 'center',
+    margin: 'auto',
+  },
+
+  divider: {
+    margin: '2rem',
+    opacity: '50%',
   },
 })
 

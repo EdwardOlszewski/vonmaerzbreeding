@@ -14,7 +14,7 @@ import Meta from '../../../components/Meta'
 import PropTypes from 'prop-types'
 import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
 import lottyFrenchBulldog from '../../../data/lottyFrenchBulldogData'
-import lottyAward from '../../../public/retiredFrenchBulldogs/lottyAward.jpg'
+
 import lottyAwardTwo from '../../../public/retiredFrenchBulldogs/lottyAwardTwo.jpg'
 import yipFrenchBulldog from '../../../data/yipFrenchBulldogData'
 import yipAward from '../../../public/retiredFrenchBulldogs/yipAward.jpg'
@@ -117,8 +117,10 @@ export default function RetiredRottVonMaerzHome() {
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={lottyAward}
+                  src='/retiredFrenchBulldogs/lottyAward.jpg'
                   alt={'lottyAward'}
+                  width={'100%'}
+                  height={'100%'}
                   layout='responsive'
                 />
               </Grid>

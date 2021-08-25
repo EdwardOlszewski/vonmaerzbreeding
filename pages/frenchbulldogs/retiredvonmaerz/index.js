@@ -105,26 +105,26 @@ export default function RetiredRottVonMaerzHome() {
         </AppBar>
 
         <TabPanel value={value} index={0}>
-          <ImgLine title={'Isabeau'} itemData={isabeauFrenchBulldog} />
-          <MobileImageList title={'Isabeau'} itemData={isabeauFrenchBulldog} />
+          <ImgLine itemData={isabeauFrenchBulldog} />
+          <MobileImageList itemData={isabeauFrenchBulldog} />
         </TabPanel>
 
         <TabPanel value={value} index={1}>
-          <ImgLine title={'Laurette'} itemData={lauretteFrenchBuldog} />
-          <MobileImageList title={'Laurette'} itemData={lauretteFrenchBuldog} />
+          <ImgLine itemData={lauretteFrenchBuldog} />
+          <MobileImageList itemData={lauretteFrenchBuldog} />
         </TabPanel>
 
         <TabPanel value={value} index={2}>
-          <ImgLine title={'Linde'} itemData={lindeFrenchBulldog} />
-          <MobileImageList title={'Linde'} itemData={lindeFrenchBulldog} />
+          <ImgLine itemData={lindeFrenchBulldog} />
+          <MobileImageList itemData={lindeFrenchBulldog} />
         </TabPanel>
 
         <Container maxWidth='lg' style={{ padding: '2rem' }}>
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
               <Image
-                src={'/lindeFrenchBulldog/lindeAward.jpg'}
-                alt={'lindeAward'}
+                src='/lindeFrenchBulldog/lindeAward.jpg'
+                alt='lindeAward'
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
@@ -132,8 +132,8 @@ export default function RetiredRottVonMaerzHome() {
             </Grid>
             <Grid item xs={12} md={6}>
               <Image
-                src={'/isabeauFrenchBulldog/groupShot.jpg'}
-                alt={'groupShot'}
+                src='/isabeauFrenchBulldog/groupShot.jpg'
+                alt='groupShot'
                 width={'100%'}
                 height={'60%'}
                 layout='responsive'

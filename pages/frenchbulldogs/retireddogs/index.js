@@ -121,7 +121,7 @@ export default function RetiredRottVonMaerzHome() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={'/retiredFrenchBulldogs/lottyAwardTwo.jpg'}
+                  src='/retiredFrenchBulldogs/lottyAwardTwo.jpg'
                   alt={'lottyAwardTwo'}
                   width={'100%'}
                   height={'80%'}
@@ -139,7 +139,7 @@ export default function RetiredRottVonMaerzHome() {
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={'/retiredFrenchBulldogs/yipAward.jpg'}
+                  src='/retiredFrenchBulldogs/yipAward.jpg'
                   alt={'yipAward'}
                   width={'100%'}
                   height={'100%'}
@@ -148,7 +148,7 @@ export default function RetiredRottVonMaerzHome() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={'/retiredFrenchBulldogs/yipAwardTwo.jpg'}
+                  src='/retiredFrenchBulldogs/yipAwardTwo.jpg'
                   alt={'yipAwardTwo'}
                   width={'100%'}
                   height={'100%'}
@@ -164,7 +164,7 @@ export default function RetiredRottVonMaerzHome() {
           <MobileImageList itemData={romeoFrenchBulldog} />
           <Container maxWidth='sm' style={{ padding: '2rem' }}>
             <Image
-              src={'/retiredFrenchBulldogs/romeoAward.jpg'}
+              src='/retiredFrenchBulldogs/romeoAward.jpg'
               alt={'romeoAward'}
               width={'100%'}
               height={'100%'}

@@ -25,7 +25,7 @@ const navTheme = createTheme({
   navContainer: {
     textAlign: 'center',
     margin: 'auto',
-    marginTop: '-1.5rem',
+    marginTop: '-.8rem',
     width: '102%',
   },
   navLink: {
@@ -36,13 +36,19 @@ const navTheme = createTheme({
     width: '85%',
     display: 'inline-block',
   },
+  navIcon: {
+    marginRight: '-2rem',
+    marginLeft: '1rem',
+    float: 'left',
+  },
+  navIconTwo: {},
   Toolbar1: {
     backgroundColor: '#BFAFA6',
     padding: '5px',
   },
   Toolbar: {
     backgroundColor: '#AA968A',
-    height: '2.5rem',
+    height: '3rem',
     boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
   },
   hamburgerIcon: {
@@ -65,15 +71,17 @@ const navTheme = createTheme({
 
   //Footer
   btmNav: {
-    backgroundColor: '#f4f5f6',
-    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
-    marginTop: '1rem',
-    height: '100%',
+    backgroundColor: '#ffff',
+    width: '100%',
+    height: '5rem',
     margin: 'auto',
     textAlign: 'center',
+    padding: '1rem',
+    width: '90%',
   },
+
   copyright: {
-    color: 'gray',
+    color: '#fffff',
   },
 })
 

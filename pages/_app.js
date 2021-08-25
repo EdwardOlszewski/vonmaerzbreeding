@@ -6,6 +6,7 @@ import { Paper } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../src/theme'
 import NavbarTop from '../components/NavbarTop'
+import MobileNav from '../components/mobileComponents/MobileNav'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../styles/globals.css'
@@ -34,7 +35,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavbarTop />
         <Navbar />
-        <Paper style={theme.layoutTheme.root} elevation={0}>
+        <Paper className='mainPaper' elevation={0}>
           <Component {...pageProps} />
         </Paper>
 

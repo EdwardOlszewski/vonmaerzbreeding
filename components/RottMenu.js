@@ -1,18 +1,17 @@
 import { useState } from 'react'
 import { withStyles } from '@material-ui/core/styles'
+import Image from 'next/image'
 import {
   Button,
   Menu,
   MenuItem,
-  List,
-  ListItem,
   ListItemText,
-  Collapse,
   useTheme,
+  ListItemIcon,
 } from '@material-ui/core'
-import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
+import RottDogIcon from '../public/icons/rott.png'
 
 const StyledMenu = withStyles({
   paper: {
@@ -67,6 +66,9 @@ const RottMenu = () => {
 
   return (
     <div style={{ display: 'inline-block' }}>
+      <ListItemIcon style={theme.navIcon}>
+        <Image src={RottDogIcon} width={'30%'} height={'30%'} />
+      </ListItemIcon>
       <Button
         className='Button'
         style={theme.menuButton}
@@ -99,24 +101,10 @@ const RottMenu = () => {
           </Link>
         </StyledMenuItem>
 
-        <StyledMenuItem onClick={() => setOpenLitter(!openLitter)}>
-          <List>
-            <ListItem style={theme.dropDownOption}>
-              <ListItemText primary='Puppy Litters' />
-              {openLitter ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-          </List>
-        </StyledMenuItem>
-
-        <StyledMenuItem disabled={!openLitter}>
-          <Collapse in={openLitter} timeout='auto' unmountOnExit>
-            <Link href='/rottweilers/openLitter/openLitter1'>
-              <ListItemText
-                style={theme.dropDownOption2}
-                primary='openLitter1'
-              />
-            </Link>
-          </Collapse>
+        <StyledMenuItem>
+          <Link href='/rottweilers/puppylitters'>
+            <ListItemText primary='Puppy Litters' />
+          </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>

@@ -6,9 +6,9 @@ export default function RottStudDogsHome() {
 
   return (
     <div className='mainContainer'>
-      <Meta title={'Rottweiler Stud Dogs'} />
+      <Meta title={'FrenchBulldog Stud Dogs'} />
       <Typography variant='h3' style={theme.pageHeading}>
-        French Bulldogs Stud Dogs
+        FrenchBulldog Stud Dogs
       </Typography>
     </div>
   )

@@ -18,24 +18,8 @@ const Footer = () => {
   const currentYear = new Date()
 
   return (
-    <BottomNavigation style={theme.btmNav}>
+    <BottomNavigation className='footer'>
       <Grid container justifyContent='center'>
-        <Grid item xs={12}>
-          <BottomNavigationAction
-            style={theme.menuButton}
-            icon={<FontAwesomeIcon icon={faFacebook} size='2x' />}
-          />
-
-          <BottomNavigationAction
-            style={theme.menuButton}
-            icon={<EmailIcon />}
-          />
-          <BottomNavigationAction
-            style={theme.menuButton}
-            icon={<PhoneIcon />}
-          />
-        </Grid>
-
         <Grid item xs={12} style={{ marginTop: '.5rem' }}>
           <Container>
             <Typography variant='caption' style={theme.copyright}>

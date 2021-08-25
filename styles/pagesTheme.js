@@ -17,9 +17,9 @@ const pagesTheme = createTheme({
   pageHeading: {
     textAlign: 'center',
     margin: 'auto',
-    padding: '1rem',
-    marginTop: '-4rem',
+    padding: '2rem',
     marginBottom: '1rem',
+    fontSize: '3rem',
   },
   logoHeading: {
     textAlign: 'center',

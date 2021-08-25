@@ -1,10 +1,5 @@
 const lindeFrenchBulldog = [
   {
-    img: '/lindeFrenchBulldog/lindeAward.jpg',
-    title: 'CH Guess V Moezels Oever',
-    subTitle: 'Indalo Shiraz x Spolbo Stellina',
-  },
-  {
     img: '/lindeFrenchBulldog/linde.jpg',
     title: 'CH Guess V Moezels Oever',
     subTitle: 'Indalo Shiraz x Spolbo Stellina',

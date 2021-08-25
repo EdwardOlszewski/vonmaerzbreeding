@@ -6,7 +6,7 @@ export default function RottBroodBitchesHome() {
   const theme = useTheme().pagesTheme
   return (
     <div className='mainContainer'>
-      <Meta title={'Retired Von Maerz Rottweilers'} />
+      <Meta title={'French Bull Dog Brood Bitches'} />
       <Typography variant='h3' style={theme.pageHeading}>
         French Bull Dog Brood Bitches
       </Typography>

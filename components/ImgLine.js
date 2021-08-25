@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { ImageList, Typography } from '@material-ui/core'
+import { ImageList, Hidden } from '@material-ui/core'
 import ImageListItem from '@material-ui/core/ImageListItem'
 import ImageListItemBar from '@material-ui/core/ImageListItemBar'
 import Image from 'next/image'
@@ -42,31 +42,37 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function SingleLineImageList({ itemData, title }) {
+export default function SingleLineImageList({ itemData }) {
   const classes = useStyles()
   const winSize = WindowSize()
 
   return (
-    <div className={classes.root}>
-      <Typography variant='h4' className={classes.title}>
-        {title}
-      </Typography>
-      <ImageList
-        className={classes.imageList}
-        cols={winSize.width > 2100 ? 4 : winSize.width > 1600 ? 3 : 2}
-      >
-        {itemData.map((item) => (
-          <ImageListItem key={item.img} cols={1} style={{ height: '25rem' }}>
-            <Image src={item.img} alt={item.title} layout='fill' />
-            <ImageListItemBar
-              title={item.title}
-              subtitle={
-                <span style={{ fontSize: '1rem' }}>{item.subTitle}</span>
-              }
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </div>
+    <Hidden smDown>
+      <div className={classes.root}>
+        <ImageList className={classes.imageList} cols={6}>
+          {itemData.map((item) => (
+            <ImageListItem
+              key={item.img}
+              cols={winSize.width > 1 ? winSize.width / winSize.width + 1.3 : 1}
+              style={{ height: '25rem' }}
+            >
+              <Image src={item.img} alt={item.title} layout='fill' />
+              <ImageListItemBar
+                title={item.title}
+                subtitle={
+                  <span style={{ fontSize: '1rem' }}>{item.subTitle}</span>
+                }
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </div>
+    </Hidden>
   )
 }
+
+/*
+
+cols={winSize.width > 2100 ? 4 : winSize.width > 1600 ? 1.8 : 3}
+
+*/

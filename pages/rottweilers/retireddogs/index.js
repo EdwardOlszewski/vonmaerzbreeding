@@ -1,6 +1,6 @@
 import { Typography, useTheme, Hidden } from '@material-ui/core'
 import Meta from '../../../components/Meta'
-import MobileImageList from '../../../components/MobileImageLine'
+import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
 import retiredDogsData from '../../../data/retiredDogsData'
 import ImgLine from '../../../components/ImgLine'
 

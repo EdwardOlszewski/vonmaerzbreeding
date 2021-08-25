@@ -1,6 +1,6 @@
 import { Typography, useTheme, Hidden } from '@material-ui/core'
 import Meta from '../../../components/Meta'
-import MobileImageList from '../../../components/MobileImageLine'
+import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
 import retiredVonMaerzData from '../../../data/retiredVonMaerzData'
 import ImgLine from '../../../components/ImgLine'
 
@@ -13,14 +13,8 @@ export default function RetiredRottVonMaerzHome() {
       <Typography variant='h3' style={theme.pageHeading}>
         Retired Von Maerz Rottweilers
       </Typography>
-
-      <Hidden mdDown>
-        <ImgLine itemData={retiredVonMaerzData} />
-      </Hidden>
-
-      <Hidden lgUp>
-        <MobileImageList itemData={retiredVonMaerzData} />
-      </Hidden>
+      <ImgLine itemData={retiredVonMaerzData} />
+      <MobileImageList itemData={retiredVonMaerzData} />
     </div>
   )
 }

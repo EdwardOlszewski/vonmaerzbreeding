@@ -4,23 +4,18 @@ import Link from 'next/link'
 import {
   AppBar,
   Toolbar,
-  IconButton,
   Hidden,
   Button,
   Container,
   useTheme,
+  ListItemIcon,
 } from '@material-ui/core'
-import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import RottMenu from './RottMenu'
 import FrenchBDMenu from './FrenchBDMenu'
-import logo from '../images/sss.png'
-
-import backgroundIMG from '../images/pawBackground.jpg'
-import MuiAccordionSummary from '@material-ui/core/AccordionSummary'
-import MuiAccordionDetails from '@material-ui/core/AccordionDetails'
-import MuiAccordion from '@material-ui/core/Accordion'
+import HomeIcon from '@material-ui/icons/Home'
+import InfoIcon from '@material-ui/icons/Info'
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
+import MobileNav from './mobileComponents/MobileNav'
 
 const Navbar = () => {
   // assign theme to use for styles
@@ -39,8 +34,9 @@ const Navbar = () => {
     <div className={theme.root}>
       <AppBar position='static' style={theme.Toolbar}>
         <Toolbar>
+          <MobileNav />
           <Container>
-            <Hidden smDown>
+            <Hidden mdDown>
               <Container maxWidth='lg' style={theme.navContainer}>
                 <Link href='/'>
                   <Button
@@ -48,6 +44,7 @@ const Navbar = () => {
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
+                    startIcon={<HomeIcon />}
                   >
                     Home
                   </Button>
@@ -58,40 +55,34 @@ const Navbar = () => {
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
+                    startIcon={<InfoIcon />}
                   >
-                    about us
+                    About Us
                   </Button>
                 </Link>
-                <Link href='/contact'>
+
+                <Link
+                  href='/VonMaerzPuppyQuestionnaire.pdf'
+                  target='_blank'
+                  download
+                >
                   <Button
                     className='Button'
                     style={theme.menuButton}
                     variant='contained'
                     color='primary'
-                  >
-                    Contact
-                  </Button>
-                </Link>
-                <Link href='/puppyquestonnaire'>
-                  <Button
-                    className='Button'
-                    style={theme.menuButton}
-                    variant='contained'
-                    color='primary'
+                    startIcon={<HelpOutlineIcon />}
                   >
                     Puppy Questionnaire
                   </Button>
                 </Link>
+
                 <RottMenu />
                 <FrenchBDMenu />
               </Container>
             </Hidden>
           </Container>
         </Toolbar>
-
-        <Hidden lgUp>
-          <RottMenu />
-        </Hidden>
       </AppBar>
     </div>
   )

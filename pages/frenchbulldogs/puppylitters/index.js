@@ -6,9 +6,9 @@ export default function RottPuppyHome() {
 
   return (
     <div className='mainContainer'>
-      <Meta title={'Rottweiler Puppys'} />
+      <Meta title={'FrenchBulldog Litters'} />
       <Typography variant='h3' style={theme.pageHeading}>
-        French Bulldog Puppys
+        FrenchBulldog Litters
       </Typography>
     </div>
   )

@@ -51,7 +51,7 @@ const About = () => {
             </Grid>
           </Container>
 
-          <Typography>
+          <Typography style={{ textAlign: 'left' }}>
             Our foundation bitch was Bea Vom Sittard, who was imported from
             Germany in 1990. Bea was a great friend to our family as well as a
             producer of many V-Rated dogs. Bea had extreme breed-type and was
@@ -59,7 +59,7 @@ const About = () => {
             family’s love for this wonderful breed.
           </Typography>
           <br />
-          <Typography>
+          <Typography style={{ textAlign: 'left' }}>
             Bea’s most famous puppy was Egor Von Maerz, who was many times V-1
             Rated and was a top competitor in the United States in the sport of
             Schutzhund. Egor was well-known for his powerful protection
@@ -70,7 +70,7 @@ const About = () => {
             rottweiler.
           </Typography>
           <br />
-          <Typography>
+          <Typography style={{ textAlign: 'left' }}>
             At the USRC nationals protection tournament, Egor scored a 99 point
             protection routine. Afterwards, his owner walked up to a strange
             little girl, handed her the leash and told her to “take my dog for a
@@ -84,7 +84,7 @@ const About = () => {
             adults and children alike.
           </Typography>
           <br />
-          <Typography>
+          <Typography style={{ textAlign: 'left' }}>
             Egor was a very impressive dog to see in person. His working weight
             was 130lbs. He was 27 inches at the shoulders, with red mahogany
             markings and black eyes. He had the most complete temperament a

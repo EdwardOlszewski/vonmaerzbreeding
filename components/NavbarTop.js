@@ -30,21 +30,6 @@ const Navbar = (props) => {
               <Container className='navImage'>
                 <Image src={logo} alt={'navbarImage'} />
               </Container>
-              <Hidden mdUp>
-                <IconButton
-                  edge='start'
-                  color='inherit'
-                  aria-label='menu'
-                  onClick={(e) => setMobileMenuOpen(!open)}
-                  style={{ marginTop: '-3rem' }}
-                >
-                  {open ? (
-                    <MenuOpenRoundedIcon style={theme.hamburgerIcon} />
-                  ) : (
-                    <MenuRoundedIcon style={theme.hamburgerIcon} />
-                  )}
-                </IconButton>
-              </Hidden>
             </Typography>
           </Container>
         </Toolbar>

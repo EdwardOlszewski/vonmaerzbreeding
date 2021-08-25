@@ -25,6 +25,7 @@ import ImgLine from '../../../components/ImgLine'
 import Image from 'next/image'
 
 function TabPanel(props) {
+  //props
   const { children, value, index, ...other } = props
 
   return (

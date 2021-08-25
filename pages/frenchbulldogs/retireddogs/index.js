@@ -14,13 +14,8 @@ import Meta from '../../../components/Meta'
 import PropTypes from 'prop-types'
 import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
 import lottyFrenchBulldog from '../../../data/lottyFrenchBulldogData'
-
-import lottyAwardTwo from '../../../public/retiredFrenchBulldogs/lottyAwardTwo.jpg'
 import yipFrenchBulldog from '../../../data/yipFrenchBulldogData'
-import yipAward from '../../../public/retiredFrenchBulldogs/yipAward.jpg'
-import yipAwardTwo from '../../../public/retiredFrenchBulldogs/yipAwardTwo.jpg'
 import romeoFrenchBulldog from '../../../data/romeoFrenchBulldogData'
-import romeoAward from '../../../public/retiredFrenchBulldogs/romeoAward.jpg'
 import ImgLine from '../../../components/ImgLine'
 import Image from 'next/image'
 
@@ -126,8 +121,10 @@ export default function RetiredRottVonMaerzHome() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={lottyAwardTwo}
+                  src={'/retiredFrenchBulldogs/lottyAwardTwo.jpg'}
                   alt={'lottyAwardTwo'}
+                  width={'100%'}
+                  height={'100%'}
                   layout='responsive'
                 />
               </Grid>
@@ -141,12 +138,20 @@ export default function RetiredRottVonMaerzHome() {
           <Container maxWidth='lg' style={{ padding: '2rem' }}>
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
-                <Image src={yipAward} alt={'yipAward'} layout='responsive' />
+                <Image
+                  src={'/retiredFrenchBulldogs/yipAward.jpg'}
+                  alt={'yipAward'}
+                  width={'100%'}
+                  height={'100%'}
+                  layout='responsive'
+                />
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src={yipAwardTwo}
+                  src={'/retiredFrenchBulldogs/yipAwardTwo.jpg'}
                   alt={'yipAwardTwo'}
+                  width={'100%'}
+                  height={'100%'}
                   layout='responsive'
                 />
               </Grid>
@@ -158,7 +163,13 @@ export default function RetiredRottVonMaerzHome() {
           <ImgLine itemData={romeoFrenchBulldog} />
           <MobileImageList itemData={romeoFrenchBulldog} />
           <Container maxWidth='sm' style={{ padding: '2rem' }}>
-            <Image src={romeoAward} alt={'romeoAward'} layout='responsive' />
+            <Image
+              src={'/retiredFrenchBulldogs/romeoAward.jpg'}
+              alt={'romeoAward'}
+              width={'100%'}
+              height={'100%'}
+              layout='responsive'
+            />
           </Container>
         </TabPanel>
       </div>

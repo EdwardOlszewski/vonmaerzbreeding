@@ -17,8 +17,6 @@ import isabeauFrenchBulldog from '../../../data/isabeauFrenchBulldog'
 import lauretteFrenchBuldog from '../../../data/lauretteFrenchBuldogData'
 import lindeFrenchBulldog from '../../../data/lindeFrenchBulldogData'
 import ImgLine from '../../../components/ImgLine'
-import groupShot from '../../../public/isabeauFrenchBulldog/groupShot.jpg'
-import lindeAward from '../../../public/lindeFrenchBulldog/lindeAward.jpg'
 import Image from 'next/image'
 
 function TabPanel(props) {
@@ -124,10 +122,22 @@ export default function RetiredRottVonMaerzHome() {
         <Container maxWidth='lg' style={{ padding: '2rem' }}>
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
-              <Image src={lindeAward} alt={'lindeAward'} layout='responsive' />
+              <Image
+                src={'/isabeauFrenchBulldog/lindeAward.jpg'}
+                alt={'lindeAward'}
+                width={'100%'}
+                height={'100%'}
+                layout='responsive'
+              />
             </Grid>
             <Grid item xs={12} md={6}>
-              <Image src={groupShot} alt={'groupShot'} layout='responsive' />
+              <Image
+                src={'/isabeauFrenchBulldog/groupShot.jpg'}
+                alt={'groupShot'}
+                width={'100%'}
+                height={'100%'}
+                layout='responsive'
+              />
               <Typography variant='subtitle2' style={{ textAlign: 'left' }}>
                 Pictured from left to right
                 <br />

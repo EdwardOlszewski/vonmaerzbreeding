@@ -12,7 +12,6 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
-import RottDogIcon from '../../public/icons/rott.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,7 +50,7 @@ export default function RottMenu() {
           id='panel1a-header'
         >
           <ListItemIcon>
-            <Image src={RottDogIcon} width={'40%'} height={'40%'} />
+            <Image src={'/icons/rott.png'} width={'40%'} height={'40%'} />
           </ListItemIcon>
           <Typography>Rottweilers</Typography>
         </AccordionSummary>

@@ -11,7 +11,6 @@ import {
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
-import RottDogIcon from '../public/icons/rott.png'
 
 const StyledMenu = withStyles({
   paper: {
@@ -67,7 +66,7 @@ const RottMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <ListItemIcon style={theme.navIcon}>
-        <Image src={RottDogIcon} width={'30%'} height={'30%'} />
+        <Image src={'/icons/rott.png'} width={'30%'} height={'30%'} />
       </ListItemIcon>
       <Button
         className='Button'

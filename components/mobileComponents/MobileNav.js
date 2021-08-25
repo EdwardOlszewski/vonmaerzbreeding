@@ -9,7 +9,7 @@ import {
   Hidden,
   IconButton,
 } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
+
 import List from '@material-ui/core/List'
 import Divider from '@material-ui/core/Divider'
 import ListItem from '@material-ui/core/ListItem'

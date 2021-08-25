@@ -9,10 +9,8 @@ import {
   useTheme,
   ListItemIcon,
 } from '@material-ui/core'
-import { ExpandLess, ExpandMore } from '@material-ui/icons'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
-import bullDogIcon from '../public/icons/bullDog.png'
 
 const StyledMenu = withStyles({
   paper: {
@@ -68,7 +66,7 @@ const FrenchBDMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <ListItemIcon style={theme.navIcon}>
-        <Image src={bullDogIcon} width={'30%'} height={'30%'} />
+        <Image src={'/icons/bullDog.png'} width={'30%'} height={'30%'} />
       </ListItemIcon>
       <Button
         className='Button'

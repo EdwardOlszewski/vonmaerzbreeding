@@ -115,7 +115,7 @@ export default function RetiredRottVonMaerzHome() {
                   src='/retiredFrenchBulldogs/lottyAward.jpg'
                   alt={'lottyAward'}
                   width={'100%'}
-                  height={'100%'}
+                  height={'80%'}
                   layout='responsive'
                 />
               </Grid>
@@ -124,7 +124,7 @@ export default function RetiredRottVonMaerzHome() {
                   src={'/retiredFrenchBulldogs/lottyAwardTwo.jpg'}
                   alt={'lottyAwardTwo'}
                   width={'100%'}
-                  height={'100%'}
+                  height={'80%'}
                   layout='responsive'
                 />
               </Grid>

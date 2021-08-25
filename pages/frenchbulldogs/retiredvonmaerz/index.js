@@ -123,7 +123,7 @@ export default function RetiredRottVonMaerzHome() {
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
               <Image
-                src={'/isabeauFrenchBulldog/lindeAward.jpg'}
+                src={'/lindeFrenchBulldog/lindeAward.jpg'}
                 alt={'lindeAward'}
                 width={'100%'}
                 height={'100%'}
@@ -135,7 +135,7 @@ export default function RetiredRottVonMaerzHome() {
                 src={'/isabeauFrenchBulldog/groupShot.jpg'}
                 alt={'groupShot'}
                 width={'100%'}
-                height={'100%'}
+                height={'60%'}
                 layout='responsive'
               />
               <Typography variant='subtitle2' style={{ textAlign: 'left' }}>

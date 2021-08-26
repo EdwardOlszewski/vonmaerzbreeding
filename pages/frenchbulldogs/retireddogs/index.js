@@ -113,18 +113,18 @@ export default function RetiredRottVonMaerzHome() {
               <Grid item xs={12} md={6}>
                 <Image
                   src='/retiredFrenchBulldogs/lottyAward.jpg'
-                  alt={'lottyAward'}
-                  width={'100%'}
-                  height={'80%'}
+                  alt='lottyAward'
+                  width='100%'
+                  height='80%'
                   layout='responsive'
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
                   src='/retiredFrenchBulldogs/lottyAwardTwo.jpg'
-                  alt={'lottyAwardTwo'}
-                  width={'100%'}
-                  height={'80%'}
+                  alt='lottyAwardTwo'
+                  width='100%'
+                  height='80%'
                   layout='responsive'
                 />
               </Grid>
@@ -140,18 +140,18 @@ export default function RetiredRottVonMaerzHome() {
               <Grid item xs={12} md={6}>
                 <Image
                   src='/retiredFrenchBulldogs/yipAward.jpg'
-                  alt={'yipAward'}
-                  width={'100%'}
-                  height={'100%'}
+                  alt='yipAward'
+                  width='100%'
+                  height='100%'
                   layout='responsive'
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
                   src='/retiredFrenchBulldogs/yipAwardTwo.jpg'
-                  alt={'yipAwardTwo'}
-                  width={'100%'}
-                  height={'100%'}
+                  alt='yipAwardTwo'
+                  width='100%'
+                  height='100%'
                   layout='responsive'
                 />
               </Grid>
@@ -164,10 +164,10 @@ export default function RetiredRottVonMaerzHome() {
           <MobileImageList itemData={romeoFrenchBulldog} />
           <Container maxWidth='sm' style={{ padding: '2rem' }}>
             <Image
-              src='/retiredFrenchBulldogs/romeoAward.jpg'
-              alt={'romeoAward'}
-              width={'100%'}
-              height={'100%'}
+              src='/retiredFrenchBulldogs/romeoAward.png'
+              alt='romeoAward'
+              width='90%'
+              height='90%'
               layout='responsive'
             />
           </Container>

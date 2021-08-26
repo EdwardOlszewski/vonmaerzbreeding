@@ -112,7 +112,7 @@ export default function RetiredRottVonMaerzHome() {
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
                 <Image
-                  src='/retiredFrenchBulldogs/lottyAward.jpg'
+                  src='/lottyAward.png'
                   alt='lottyAward'
                   width='100%'
                   height='80%'
@@ -121,7 +121,7 @@ export default function RetiredRottVonMaerzHome() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src='/retiredFrenchBulldogs/lottyAwardTwo.jpg'
+                  src='/lottyAwardTwo.png'
                   alt='lottyAwardTwo'
                   width='100%'
                   height='80%'
@@ -139,7 +139,7 @@ export default function RetiredRottVonMaerzHome() {
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
                 <Image
-                  src='/retiredFrenchBulldogs/yipAward.jpg'
+                  src='/yipAward.png'
                   alt='yipAward'
                   width='100%'
                   height='100%'
@@ -148,7 +148,7 @@ export default function RetiredRottVonMaerzHome() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Image
-                  src='/retiredFrenchBulldogs/yipAwardTwo.jpg'
+                  src='/yipAwardTwo.png'
                   alt='yipAwardTwo'
                   width='100%'
                   height='100%'

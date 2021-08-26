@@ -1,14 +1,14 @@
 const romeoFrenchBulldog = [
   {
-    img: '/retiredFrenchbulldogs/romeo.jpg',
+    img: '/retiredFrenchBulldogs/romeo.jpg',
     title: 'Enchantes Couture Affair Dcoeur',
   },
   {
-    img: '/retiredFrenchbulldogs/romeoTwo.jpg',
+    img: '/retiredFrenchBulldogs/romeoTwo.jpg',
     title: 'Enchantes Couture Affair Dcoeur',
   },
   {
-    img: '/retiredFrenchbulldogs/romeoThree.jpg',
+    img: '/retiredFrenchBulldogs/romeoThree.png',
     title: 'Enchantes Couture Affair Dcoeur',
   },
 ]

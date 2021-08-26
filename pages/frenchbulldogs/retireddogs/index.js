@@ -164,7 +164,7 @@ export default function RetiredRottVonMaerzHome() {
           <MobileImageList itemData={romeoFrenchBulldog} />
           <Container maxWidth='sm' style={{ padding: '2rem' }}>
             <Image
-              src='/isabeauFrenchBulldog/groupShot.jpg'
+              src='/romeoAward.png'
               alt='romeoAward'
               width='90%'
               height='90%'

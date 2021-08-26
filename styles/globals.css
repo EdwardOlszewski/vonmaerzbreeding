@@ -34,7 +34,7 @@ a {
 .mainPaper {
   text-align: center;
   margin: auto;
-  width: 95%;
+  width: 90%;
   padding: 2rem;
   min-height: 100vh;
 }
@@ -54,7 +54,7 @@ a {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .mainContainer {
     width: 100%;
   }

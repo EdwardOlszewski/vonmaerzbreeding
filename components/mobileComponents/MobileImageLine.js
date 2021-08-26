@@ -55,7 +55,7 @@ const MobileImageLine = ({ itemData }) => {
               key={item.img}
               rows={
                 winSize.width < 900 && winSize.width > 300
-                  ? winSize.width / winSize.width + 0.7
+                  ? winSize.width / winSize.width + 0.6
                   : winSize.width < 300
                   ? 1
                   : 2

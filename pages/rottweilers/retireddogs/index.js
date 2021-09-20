@@ -1,4 +1,4 @@
-import { Typography, useTheme, Hidden } from '@material-ui/core'
+import { Typography, useTheme } from '@material-ui/core'
 import Meta from '../../../components/Meta'
 import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
 import retiredDogsData from '../../../data/retiredDogsData'
@@ -13,14 +13,8 @@ export default function RetiredRottHome() {
       <Typography variant='h3' style={theme.pageHeading}>
         Retired Rottweilers
       </Typography>
-
-      <Hidden mdDown>
-        <ImgLine itemData={retiredDogsData} />
-      </Hidden>
-
-      <Hidden lgUp>
-        <MobileImageList itemData={retiredDogsData} />
-      </Hidden>
+      <ImgLine itemData={retiredDogsData} />
+      <MobileImageList itemData={retiredDogsData} />
     </div>
   )
 }

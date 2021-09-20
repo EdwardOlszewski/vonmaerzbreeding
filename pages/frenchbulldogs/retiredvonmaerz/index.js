@@ -156,29 +156,3 @@ export default function RetiredRottVonMaerzHome() {
     </div>
   )
 }
-
-/*
-
-<Divider style={theme.divider} />
-      <Hidden mdDown>
-        <ImgLine title={'Isabeau'} itemData={isabeauFrenchBulldog} />
-
-        <Divider style={theme.divider} />
-        <ImgLine title={'Laurette'} itemData={lauretteFrenchBuldog} />
-
-        <Divider style={theme.divider} />
-        <ImgLine title={'Linde'} itemData={lindeFrenchBulldog} />
-      </Hidden>
-
-      <Hidden lgUp>
-        <MobileImageList title={'Isabeau'} itemData={isabeauFrenchBulldog} />
-
-        <Divider style={theme.divider} />
-        <MobileImageList title={'Laurette'} itemData={lauretteFrenchBuldog} />
-
-        <Divider style={theme.divider} />
-        <MobileImageList title={'Linde'} itemData={lindeFrenchBulldog} />
-      </Hidden>
-
-
-*/

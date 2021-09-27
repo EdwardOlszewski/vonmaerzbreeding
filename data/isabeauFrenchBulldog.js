@@ -41,7 +41,7 @@ const isabeuFrenchBulldog = [
     subTitle: 'Isabeaus Grandma',
   },
   {
-    img: '/isabeauFrenchBulldog/groupshot.jpg',
+    img: '/isabeauFrenchBulldog/groupShot.jpg',
     title: 'Group Shot',
     subTitle: '',
   },

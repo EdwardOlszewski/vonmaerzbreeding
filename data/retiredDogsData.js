@@ -1,6 +1,6 @@
 const retiredDogsData = [
   {
-    img: '/retiredDogsRott/bea.jpg',
+    img: '/retiredDogsRott/bea.png',
     title: 'Multi V-1 Rated Bea Vom Sittard',
     subTitle: 'BH, AD, ZTP, O.F.A. Excellent',
   },

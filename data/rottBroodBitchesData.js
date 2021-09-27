@@ -1,11 +1,11 @@
 const rottBroodBitches = [
   {
-    img: '/rottBroodBitches/jamaica2.jpg',
+    img: '/rottBroodBitches/jamaica2.png',
     title: 'Jamaica Vravolu',
     subTitle: 'Slovenia import',
   },
   {
-    img: '/rottBroodBitches/jamaica.jpg',
+    img: '/rottBroodBitches/jamaica.png',
     title: 'Jamaica Vravolu',
     subTitle: 'Slovenia import',
   },

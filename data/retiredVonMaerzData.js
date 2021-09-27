@@ -12,6 +12,7 @@ const retiredVonMaerzData = [
   {
     img: '/retiredVonMaerz/eisenhower.jpg',
     title: 'Eisenhower Von Maerz',
+    subTitle: ' ',
   },
   {
     img: '/retiredVonMaerz/emily.jpg',

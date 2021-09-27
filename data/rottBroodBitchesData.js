@@ -1,12 +1,22 @@
 const rottBroodBitches = [
   {
+    img: '/rottBroodBitches/jamaica2.jpg',
+    title: 'Jamaica Vravolu',
+    subTitle: 'Slovenia import',
+  },
+  {
+    img: '/rottBroodBitches/jamaica.jpg',
+    title: 'Jamaica Vravolu',
+    subTitle: 'Slovenia import',
+  },
+  {
     img: '/rottBroodBitches/brass.jpg',
-    title: 'Vrated brass singidunum Rott',
+    title: 'Vrated Bras Singidunum Rott',
     subTitle: 'Serbian import',
   },
   {
     img: '/rottBroodBitches/issabelle.jpg',
-    title: 'Vrated Issabelle vravolu',
+    title: 'Vrated Issabelle Vravolu',
     subTitle: 'Slovenia import',
   },
 ]

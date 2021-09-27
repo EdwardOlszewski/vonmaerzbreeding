@@ -1,8 +1,7 @@
-import { Typography, useTheme } from '@material-ui/core'
+import { Typography, useTheme, Grid, Paper } from '@material-ui/core'
 import Meta from '../../../components/Meta'
-import MobileImageList from '../../../components/mobileComponents/MobileImageLine'
-import retiredDogsData from '../../../data/retiredDogsData'
-import ImgLine from '../../../components/ImgLine'
+import retiredDogs from '../../../data/retiredDogsData'
+import PictureCard from '../../../components/PictureCard'
 
 export default function RetiredRottHome() {
   const theme = useTheme().pagesTheme
@@ -13,8 +12,16 @@ export default function RetiredRottHome() {
       <Typography variant='h3' style={theme.pageHeading}>
         Retired Rottweilers
       </Typography>
-      <ImgLine itemData={retiredDogsData} />
-      <MobileImageList itemData={retiredDogsData} />
+
+      <Grid container spacing={1}>
+        {retiredDogs.map((item) => (
+          <Grid item xs={12} sm={12} md={6} lg={4}>
+            <Paper elevation={0} style={theme.imgPaper}>
+              <PictureCard item={item} />
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
     </div>
   )
 }

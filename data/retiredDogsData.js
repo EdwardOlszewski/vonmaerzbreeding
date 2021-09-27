@@ -22,12 +22,12 @@ const retiredDogsData = [
   {
     img: '/retiredDogsRott/eiress.jpg',
     title: 'Multi V-1 Rated Eiress Vom Varrabba Haus',
-    subTitle: '',
+    subTitle: ' ',
   },
   {
     img: '/retiredDogsRott/bernie.jpg',
     title: 'Multi V-1 Rated Bernie Vom Gagne',
-    subTitle: '',
+    subTitle: ' ',
   },
 ]
 

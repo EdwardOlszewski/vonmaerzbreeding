@@ -81,7 +81,7 @@ export default function Home() {
       </Typography>
 
       <Typography variant='h4' className={classes.secondHeading}>
-        Frenchie & Rottweiler Puppies Summer & Fall 2021
+        Rottweiler Puppies Avaliable Now!
       </Typography>
 
       <Container maxWidth='lg' className={classes.root}>

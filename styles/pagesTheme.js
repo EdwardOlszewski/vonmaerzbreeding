@@ -1,7 +1,6 @@
 import { createTheme } from '@material-ui/core/styles'
 
 const pagesTheme = createTheme({
-  //Home Screen
   contactButton: {
     backgroundColor: '#439775',
     marginLeft: '10px',
@@ -48,6 +47,13 @@ const pagesTheme = createTheme({
     margin: '5px',
     textAlign: 'center',
     margin: 'auto',
+  },
+
+  imgPaper: {
+    boxShadow: 'rgba(0, 0, 0, 0.04) 0px 3px 5px',
+    backgroundColor: '#fcfcfc',
+    padding: '1rem',
+    borderRadius: 0,
   },
 
   divider: {

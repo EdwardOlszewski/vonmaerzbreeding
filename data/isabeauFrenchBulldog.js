@@ -40,6 +40,11 @@ const isabeuFrenchBulldog = [
     title: 'INT Ch. Daphne Britt Van Marvers Fortuna',
     subTitle: 'Isabeaus Grandma',
   },
+  {
+    img: '/isabeauFrenchBulldog/groupshot.jpg',
+    title: 'Group Shot',
+    subTitle: '',
+  },
 ]
 
 export default isabeuFrenchBulldog

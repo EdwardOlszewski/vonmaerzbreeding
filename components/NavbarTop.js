@@ -3,14 +3,10 @@ import Image from 'next/image'
 import {
   AppBar,
   Toolbar,
-  Hidden,
   Container,
   Typography,
-  IconButton,
   useTheme,
 } from '@material-ui/core'
-import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded'
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded'
 import logo from '../public/logo.png'
 
 const Navbar = (props) => {

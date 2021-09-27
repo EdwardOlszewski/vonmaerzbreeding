@@ -133,23 +133,3 @@ export default function SwipeableTemporaryDrawer() {
     </Hidden>
   )
 }
-
-/*
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role='presentation'
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        <ListItem>
-          <MobileRottMenu />
-        </ListItem>
-      </List>
-      <Divider />
-    </div>
-
-
-*/

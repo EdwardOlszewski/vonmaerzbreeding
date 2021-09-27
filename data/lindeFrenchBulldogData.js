@@ -30,6 +30,26 @@ const lindeFrenchBulldog = [
     subTitle: 'Indalo Shiraz x Spolbo Stellina',
   },
   {
+    img: '/lindeFrenchBulldog/lindeAward.jpg',
+    title: 'CH Guess V Moezels Oever',
+    subTitle: 'Indalo Shiraz x Spolbo Stellina',
+  },
+  {
+    img: '/lindeFrenchBulldog/lindeShow.jpg',
+    title: 'CH Guess V Moezels Oever',
+    subTitle: 'Indalo Shiraz x Spolbo Stellina',
+  },
+  {
+    img: '/lindeFrenchBulldog/lindeShowThree.jpg',
+    title: 'CH Guess V Moezels Oever',
+    subTitle: 'Indalo Shiraz x Spolbo Stellina',
+  },
+  {
+    img: '/lindeFrenchBulldog/lindeShowTwo.jpg',
+    title: 'INT CH. Store Lindes Indalo Shiraz',
+    subTitle: 'Lindes Father',
+  },
+  {
     img: '/lindeFrenchBulldog/lindeFather.jpg',
     title: 'INT CH. Store Lindes Indalo Shiraz',
     subTitle: 'Lindes Father',

@@ -14,6 +14,16 @@ const lottyFrenchBulldog = [
     title: 'Lotty of Jakangel Janoel',
     subTitle: 'CH. Enrique Janoel ex Ch. Mini Bohemia',
   },
+  {
+    img: '/retiredFrenchbulldogs/lottyAward.jpg',
+    title: 'Lotty of Jakangel Janoel',
+    subTitle: 'CH. Enrique Janoel ex Ch. Mini Bohemia',
+  },
+  {
+    img: '/retiredFrenchbulldogs/lottyAwardTwo.jpg',
+    title: 'Lotty of Jakangel Janoel',
+    subTitle: 'CH. Enrique Janoel ex Ch. Mini Bohemia',
+  },
 ]
 
 export default lottyFrenchBulldog

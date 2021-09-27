@@ -81,16 +81,6 @@ export default function SwipeableTemporaryDrawer() {
         <Divider />
         <ListItem className={classes.mobileLink}>
           <ListItemIcon>
-            <InfoIcon />
-          </ListItemIcon>
-          <Link href='/about'>
-            <Typography>About Us</Typography>
-          </Link>
-        </ListItem>
-
-        <Divider />
-        <ListItem className={classes.mobileLink}>
-          <ListItemIcon>
             <HelpOutlineIcon />
           </ListItemIcon>
           <Link href='/VonMaerzPuppyQuestionnaire.pdf' target='_blank' download>

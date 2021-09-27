@@ -41,47 +41,14 @@ const navTheme = createTheme({
     marginLeft: '1rem',
     float: 'left',
   },
-  navIconTwo: {},
   Toolbar1: {
-    backgroundColor: '#BFAFA6',
+    backgroundColor: '#9e887a',
     padding: '5px',
   },
   Toolbar: {
-    backgroundColor: '#AA968A',
+    backgroundColor: '#9e887a',
     height: '3rem',
     boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
-  },
-  hamburgerIcon: {
-    color: 'black',
-    fontSize: '2rem',
-  },
-  //Accordion Style
-  mobileDisplay: {
-    display: 'none',
-  },
-  mobileMenu: {
-    borderRadius: '0',
-  },
-
-  //Drop Down Options
-  dropDownOption: {
-    padding: 0,
-  },
-  dropDownOption2: { marginLeft: '10px' },
-
-  //Footer
-  btmNav: {
-    backgroundColor: '#ffff',
-    width: '100%',
-    height: '5rem',
-    margin: 'auto',
-    textAlign: 'center',
-    padding: '1rem',
-    width: '90%',
-  },
-
-  copyright: {
-    color: '#fffff',
   },
 })
 

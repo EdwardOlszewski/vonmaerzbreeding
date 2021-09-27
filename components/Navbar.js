@@ -47,17 +47,7 @@ const Navbar = () => {
                     Home
                   </Button>
                 </Link>
-                <Link href='/about'>
-                  <Button
-                    className='Button'
-                    style={theme.menuButton}
-                    variant='contained'
-                    color='primary'
-                    startIcon={<InfoIcon />}
-                  >
-                    About Us
-                  </Button>
-                </Link>
+                
 
                 <Link
                   href='/VonMaerzPuppyQuestionnaire.pdf'

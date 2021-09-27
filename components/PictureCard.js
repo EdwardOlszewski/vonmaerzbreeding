@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     borderRadius: 0,
     padding: '5px',
-    backgroundColor: '#fcfcfc',
   },
   text: {
     fontWeight: 'bold',
@@ -23,7 +22,11 @@ export default function MediaCard({ item }) {
   const classes = useStyles()
 
   return (
-    <Card className={classes.root} elevation={0}>
+    <Card
+      className={classes.root}
+      elevation={0}
+      style={{ backgroundColor: '#fcfcfc' }}
+    >
       <CardMedia component='img' image={item.img} alt={item.title} />
       <CardContent>
         <Typography variant='subtitle1' className={classes.text}>

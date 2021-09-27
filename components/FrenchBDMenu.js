@@ -66,7 +66,12 @@ const FrenchBDMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <ListItemIcon style={theme.navIcon}>
-        <Image src={'/icons/bulldog.png'} width={'30%'} height={'30%'} />
+        <Image
+          src={'/icons/bulldog.png'}
+          alt='bulldogIcon'
+          width={'30%'}
+          height={'30%'}
+        />
       </ListItemIcon>
       <Button
         className='Button'

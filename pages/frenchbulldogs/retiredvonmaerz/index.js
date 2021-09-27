@@ -17,23 +17,23 @@ export default function RetiredVonMaerzFrenchBulldogs() {
 
       <Grid container spacing={1}>
         {isabeauFrenchBulldog.map((item) => (
-          <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Paper elevation={0} style={theme.imgPaper}>
-              <PictureCard item={item} />
+          <Grid key={item.title} item xs={12} sm={12} md={6} lg={4}>
+            <Paper key={item.title} elevation={0} style={theme.imgPaper}>
+              <PictureCard key={item.title} item={item} />
             </Paper>
           </Grid>
         ))}
         {lauretteFrenchBuldog.map((item) => (
-          <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Paper elevation={0} style={theme.imgPaper}>
-              <PictureCard item={item} />
+          <Grid key={item.title} item xs={12} sm={12} md={6} lg={4}>
+            <Paper key={item.title} elevation={0} style={theme.imgPaper}>
+              <PictureCard key={item.title} item={item} />
             </Paper>
           </Grid>
         ))}
         {lindeFrenchBulldog.map((item) => (
-          <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Paper elevation={0} style={theme.imgPaper}>
-              <PictureCard item={item} />
+          <Grid key={item.title} item xs={12} sm={12} md={6} lg={4}>
+            <Paper key={item.title} elevation={0} style={theme.imgPaper}>
+              <PictureCard key={item.title} item={item} />
             </Paper>
           </Grid>
         ))}

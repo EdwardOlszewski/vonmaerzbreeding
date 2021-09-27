@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   AppBar,
@@ -8,7 +7,6 @@ import {
   Button,
   Container,
   useTheme,
-  ListItemIcon,
 } from '@material-ui/core'
 import RottMenu from './RottMenu'
 import FrenchBDMenu from './FrenchBDMenu'

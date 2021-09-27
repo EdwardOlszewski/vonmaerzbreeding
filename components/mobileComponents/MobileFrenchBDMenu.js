@@ -50,7 +50,12 @@ export default function RottMenu() {
           id='panel1a-header'
         >
           <ListItemIcon>
-            <Image src={'/icons/bulldog.png'} width={'40%'} height={'40%'} />
+            <Image
+              src={'/icons/bulldog.png'}
+              alt='bulldogIcon'
+              width={'40%'}
+              height={'40%'}
+            />
           </ListItemIcon>
           <Typography>French Bulldogs</Typography>
         </AccordionSummary>

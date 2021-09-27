@@ -66,7 +66,12 @@ const RottMenu = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <ListItemIcon style={theme.navIcon}>
-        <Image src={'/icons/rott.png'} width={'30%'} height={'30%'} />
+        <Image
+          src={'/icons/rott.png'}
+          alt='rottIcon'
+          width={'30%'}
+          height={'30%'}
+        />
       </ListItemIcon>
       <Button
         className='Button'

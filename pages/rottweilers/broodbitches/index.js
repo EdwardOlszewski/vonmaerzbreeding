@@ -15,7 +15,7 @@ export default function RottBroodBitchesHome() {
 
       <Grid container spacing={1}>
         {rottBroodBitches.map((item) => (
-          <Grid key={item.title} item xs={12} sm={12} md={6} lg={4}>
+          <Grid key={item.title} item xs={12} sm={12} md={6} lg={6}>
             <Paper key={item.title} elevation={0} style={theme.imgPaper}>
               <PictureCard key={item.title} item={item} />
             </Paper>

@@ -54,6 +54,7 @@ const pagesTheme = createTheme({
     backgroundColor: '#fcfcfc',
     padding: '1rem',
     borderRadius: 0,
+    height: '100%',
   },
 
   divider: {

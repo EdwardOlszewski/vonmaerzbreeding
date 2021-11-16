@@ -1,7 +1,7 @@
 const retiredDogsData = [
   {
     img: '/retiredDogsRott/bea.png',
-    title: 'Multi V-1 Rated Bea Vom Sittard',
+    title: 'Multi V-1 Rated Bella Vom Hammerbachtal',
     subTitle: 'BH, AD, ZTP, O.F.A. Excellent',
   },
   {
@@ -21,7 +21,7 @@ const retiredDogsData = [
   },
   {
     img: '/retiredDogsRott/eiress.jpg',
-    title: 'Multi V-1 Rated Eiress Vom Varrabba Haus',
+    title: 'Multi V-1 Rated Eiress Vom Carrabba Haus',
     subTitle: ' ',
   },
   {

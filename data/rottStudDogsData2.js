@@ -1,6 +1,6 @@
 const rottStudDogs = [
   {
-    img: '/rottStudDogs/Luca5.jpg',
+    img: '/rottStudDogs/Luca5.png',
     title: 'Multi V-Rated Luca Brasi Vravolu ',
     subTitle: 'Slovenian Import 6 months',
   },
@@ -15,7 +15,7 @@ const rottStudDogs = [
     subTitle: 'Slovenian Import 2 years old',
   },
   {
-    img: '/rottStudDogs/Luca4.jpg',
+    img: '/rottStudDogs/Luca4.png',
     title: 'Multi V-Rated Luca Brasi Vravolu',
     subTitle: 'Slovenian Import 2 years old',
   },

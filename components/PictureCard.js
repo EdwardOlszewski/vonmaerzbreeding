@@ -18,9 +18,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '1rem',
   },
   text: {
-    textAlign: 'left',
     [theme.breakpoints.up('xs')]: {
-      fontSize: '2vmax',
+      fontSize: '2.2vmax',
     },
     [theme.breakpoints.up('md')]: {
       fontSize: '1.5vmax',

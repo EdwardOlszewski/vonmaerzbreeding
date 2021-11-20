@@ -1,9 +1,21 @@
 const puppyLitters = [
   {
-    img: '/rottLitters/WLitter.jpg',
+    img: '/rottLitters/umaPup.jpg',
     title:
-      'W-Litter 3 Weeks Old',
-    subTitle: '3 Girls, 1 Boy',
+      'UMA Puppy',
+    subTitle: '',
+  },
+  {
+    img: '/rottLitters/uma1.jpg',
+    title:
+      'UMA Puppy',
+    subTitle: '',
+  },
+  {
+    img: '/rottLitters/uma9.jpg',
+    title:
+      'UMA 9 months old',
+    subTitle: '',
   },
   
 ]

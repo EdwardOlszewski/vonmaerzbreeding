@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { ThemeProvider, useTheme } from '@material-ui/core/styles'
@@ -35,10 +35,9 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavbarTop />
         <Navbar />
-        <Paper className='mainPaper' elevation={0}>
+        <div className='mainPaper'>
           <Component {...pageProps} />
-        </Paper>
-
+        </div>
         <Footer />
       </ThemeProvider>
     </React.Fragment>

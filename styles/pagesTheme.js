@@ -50,11 +50,9 @@ const pagesTheme = createTheme({
   },
 
   imgPaper: {
-    boxShadow: 'rgba(0, 0, 0, 0.04) 0px 3px 5px',
-    backgroundColor: '#fcfcfc',
-    padding: '1rem',
     borderRadius: 0,
     height: '100%',
+    boxShadow: 'rgba(0, 0, 0, 0.05) 0px 1px 2px 0px',
   },
 
   divider: {

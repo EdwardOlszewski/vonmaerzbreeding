@@ -6,11 +6,39 @@ import {
   Menu,
   MenuItem,
   ListItemText,
-  useTheme,
   ListItemIcon,
+  makeStyles,
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Link from 'next/link'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: '#3E3E3E',
+  },
+  navIcon: {
+    marginRight: '-1.5rem',
+    marginLeft: '1rem',
+    float: 'left',
+  },
+  button: {
+    background: 'none',
+    color: 'white',
+    boxShadow: 'none',
+
+    '&:hover': {
+      background: 'none',
+      boxShadow: 'none',
+      color: 'gray',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1vmax',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '.8vmax',
+    },
+  },
+}))
 
 const StyledMenu = withStyles({
   paper: {
@@ -46,14 +74,10 @@ const StyledMenuItem = withStyles((theme) => ({
   },
 }))(MenuItem)
 
-const RottMenu = () => {
-  // assign theme to use for styles
-  const theme = useTheme().navTheme
+const RottMenu = ({ dogType, pictureName }) => {
+  const classes = useStyles()
 
   const [anchorEl, setAnchorEl] = useState(null)
-  const [studOpen, setStudOpen] = useState(false)
-  const [openBrood, setOpenBrood] = useState(false)
-  const [openLitter, setOpenLitter] = useState(false)
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
@@ -65,24 +89,22 @@ const RottMenu = () => {
 
   return (
     <div style={{ display: 'inline-block' }}>
-      <ListItemIcon style={theme.navIcon}>
+      <ListItemIcon className={classes.navIcon}>
         <Image
-          src={'/icons/rott.png'}
+          src={`/icons/${pictureName}`}
           alt='rottIcon'
-          width={'30%'}
-          height={'30%'}
+          width={'40%'}
+          height={'40%'}
         />
       </ListItemIcon>
       <Button
-        className='Button'
-        style={theme.menuButton}
+        className={classes.button}
         aria-controls='customized-menu'
         aria-haspopup='true'
         variant='contained'
-        color='primary'
         onClick={handleClick}
       >
-        Rottweilers
+        {dogType}
         <ExpandMoreIcon />
       </Button>
 
@@ -94,37 +116,37 @@ const RottMenu = () => {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <Link href='/rottweilers/studdogs'>
+          <Link href={`/${dogType}/studdogs`}>
             <ListItemText primary='Stud Dogs' />
           </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/broodbitches'>
+          <Link href={`/${dogType}/broodbitches`}>
             <ListItemText primary='Brood Bitches' />
           </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/puppylitters'>
+          <Link href={`/${dogType}/puppylitters`}>
             <ListItemText primary='Puppy Litters' />
           </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/VonMaerzRottweilerContract.pdf' target='_blank' download>
+          <Link href={`/${dogType}Contract.pdf`} target='_blank' download>
             <ListItemText primary='Puppy Contract' />
           </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/retireddogs'>
+          <Link href={`/${dogType}/retireddogs`}>
             <ListItemText primary='Retired Dogs' />
           </Link>
         </StyledMenuItem>
 
         <StyledMenuItem>
-          <Link href='/rottweilers/retiredvonmaerz'>
+          <Link href={`/${dogType}/retiredvonmaerz`}>
             <ListItemText primary='Retired Von Marez' />
           </Link>
         </StyledMenuItem>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Link from 'next/link'
 import {
   AppBar,
@@ -6,91 +5,88 @@ import {
   Hidden,
   Button,
   Container,
-  useTheme,
+  makeStyles,
 } from '@material-ui/core'
-import RottMenu from './RottMenu'
-import FrenchBDMenu from './FrenchBDMenu'
+import DropDownMenu from './DropDownMenu'
 import HomeIcon from '@material-ui/icons/Home'
-import InfoIcon from '@material-ui/icons/Info'
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 import MobileNav from './mobileComponents/MobileNav'
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: '#3E3E3E',
+  },
+  linkContainer: {
+    textAlign: 'center',
+
+    width: '100%',
+  },
+  button: {
+    background: 'none',
+    color: 'white',
+    boxShadow: 'none',
+    '&:hover': {
+      background: 'none',
+      boxShadow: 'none',
+      color: 'gray',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1vmax',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '.8vmax',
+    },
+  },
+}))
+
 const Navbar = () => {
-  // assign theme to use for styles
-  const theme = useTheme().navTheme
-
-  const [open, setMobileMenuOpen] = useState(false)
-
-  const [expanded, setExpanded] = useState(true)
-  const [expanded2, setExpanded2] = useState(true)
-
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false)
-  }
+  const classes = useStyles()
 
   return (
-    <div className={theme.root}>
-      <AppBar position='static' style={theme.Toolbar}>
+    <>
+      <AppBar position='static' className={classes.root}>
         <Toolbar>
           <MobileNav />
-          <Container>
-            <Hidden mdDown>
-              <Container maxWidth='lg' style={theme.navContainer}>
-                <Link href='/'>
-                  <Button
-                    className='Button'
-                    style={theme.menuButton}
-                    variant='contained'
-                    color='primary'
-                    startIcon={<HomeIcon />}
-                  >
-                    Home
-                  </Button>
-                </Link>
-                
-
-                <Link
-                  href='/VonMaerzPuppyQuestionnaire.pdf'
-                  target='_blank'
-                  download
+          <Hidden mdDown>
+            <div maxWidth='false' className={classes.linkContainer}>
+              <Link href='/'>
+                <Button
+                  className={classes.button}
+                  variant='contained'
+                  startIcon={<HomeIcon />}
+                  size='lg'
                 >
-                  <Button
-                    className='Button'
-                    style={theme.menuButton}
-                    variant='contained'
-                    color='primary'
-                    startIcon={<HelpOutlineIcon />}
-                  >
-                    Puppy Questionnaire
-                  </Button>
-                </Link>
+                  Home
+                </Button>
+              </Link>
 
-                <RottMenu />
-                <FrenchBDMenu />
-              </Container>
-            </Hidden>
-          </Container>
+              <Link
+                href='/VonMaerzPuppyQuestionnaire.pdf'
+                target='_blank'
+                download
+              >
+                <Button
+                  className={classes.button}
+                  variant='contained'
+                  startIcon={<HelpOutlineIcon />}
+                  size='lg'
+                >
+                  Puppy Questionnaire
+                </Button>
+              </Link>
+
+              <DropDownMenu dogType={'rottweilers'} pictureName={'rott.png'} />
+              <DropDownMenu
+                dogType={'frenchbulldogs'}
+                pictureName={'bulldog.png'}
+              />
+            </div>
+          </Hidden>
         </Toolbar>
       </AppBar>
-    </div>
+
+      <div className='pawBackground' />
+    </>
   )
 }
 export default Navbar
-
-/*
-
- <Accordion
-                  square
-                  expanded={expanded2}
-                  onClick={() => setExpanded2(!expanded2)}
-                >
-                  <AccordionSummary
-                    aria-controls='panel2d-content'
-                    id='panel2d-header'
-                  >
-                    <Typography>Brood Bitches</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>Hu</AccordionDetails>
-                </Accordion>
-
-*/

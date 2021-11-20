@@ -6,28 +6,53 @@ import {
   Typography,
   Container,
   useTheme,
-  Card,
-  CardContent,
-  CardMedia,
+  makeStyles,
 } from '@material-ui/core'
 import Meta from '../components/Meta'
 
+const useStyles = makeStyles((theme) => ({
+  text: {
+    padding: '1rem',
+    textAlign: 'left',
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '2vmax',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1.3vmax',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '1vmax',
+    },
+  },
+  title: {
+    marginBottom: '5rem',
+    marginTop: '4rem',
+  },
+  grid: {
+    marginBottom: '10rem',
+  },
+}))
+
 const About = () => {
-  const theme = useTheme().pagesTheme
+  const classes = useStyles()
 
   return (
-    <div className='mainContainer'>
+    <>
       <Meta title={'About Us'} />
-      <Typography variant='h3' style={{ marginBottom: '5rem' }}>
+      <Typography variant='h3' className={classes.title}>
         Rottweiler Puppies Avaliable Now!
       </Typography>
 
       <Grid container justifyContent='center'>
-        <Grid item xs={12} lg={8} xl={7}>
-          <Container style={theme.imgContainer}>
+        <Grid item xs={12} lg={8} xl={7} className={classes.grid}>
+          <Container>
             <Grid xs={12} container>
               <Grid xs={6} item>
-                <div style={{ padding: '5px' }}>
+                <div
+                  style={{
+                    padding: '5px',
+                  }}
+                >
                   <Image src={dogPic} alt={'dogPic1'} />
                 </div>
 
@@ -51,7 +76,7 @@ const About = () => {
             </Grid>
           </Container>
 
-          <Typography style={{ textAlign: 'left' }}>
+          <Typography className={classes.text} variant='h6'>
             Our foundation bitch was Bea Vom Sittard, who was imported from
             Germany in 1990. Bea was a great friend to our family as well as a
             producer of many V-Rated dogs. Bea had extreme breed-type and was
@@ -59,7 +84,7 @@ const About = () => {
             family’s love for this wonderful breed.
           </Typography>
           <br />
-          <Typography style={{ textAlign: 'left' }}>
+          <Typography className={classes.text} variant='h6'>
             Bea’s most famous puppy was Egor Von Maerz, who was many times V-1
             Rated and was a top competitor in the United States in the sport of
             Schutzhund. Egor was well-known for his powerful protection
@@ -70,7 +95,7 @@ const About = () => {
             rottweiler.
           </Typography>
           <br />
-          <Typography style={{ textAlign: 'left' }}>
+          <Typography className={classes.text} variant='h6'>
             At the USRC nationals protection tournament, Egor scored a 99 point
             protection routine. Afterwards, his owner walked up to a strange
             little girl, handed her the leash and told her to “take my dog for a
@@ -84,7 +109,7 @@ const About = () => {
             adults and children alike.
           </Typography>
           <br />
-          <Typography style={{ textAlign: 'left' }}>
+          <Typography className={classes.text} variant='h6'>
             Egor was a very impressive dog to see in person. His working weight
             was 130lbs. He was 27 inches at the shoulders, with red mahogany
             markings and black eyes. He had the most complete temperament a
@@ -93,7 +118,7 @@ const About = () => {
           </Typography>
         </Grid>
       </Grid>
-    </div>
+    </>
   )
 }
 

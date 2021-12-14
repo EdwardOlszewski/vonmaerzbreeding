@@ -30,6 +30,10 @@ export default function MyApp(props) {
           name='viewport'
           content='minimum-scale=1, initial-scale=1, width=device-width'
         />
+        <meta
+          name='keywords'
+          content='rottweilers, puppies, french bulldogs, rottweiler puppies, von maerz, dogs for sale, puppies for sale, breeders, breeding'
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

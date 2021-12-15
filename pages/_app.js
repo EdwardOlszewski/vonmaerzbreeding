@@ -27,6 +27,10 @@ export default function MyApp(props) {
       <Head>
         <title>My page</title>
         <meta
+          name='google-site-verification'
+          content='MsgzQwwFhbHrdtZbtvszPSwOmQLG5LU1g4szwZuJi0Y'
+        />
+        <meta
           name='viewport'
           content='minimum-scale=1, initial-scale=1, width=device-width'
         />

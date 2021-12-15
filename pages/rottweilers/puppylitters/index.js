@@ -80,7 +80,7 @@ export default function PuppyLitter() {
 
   return (
     <div className='mainContainer'>
-      <Meta title={'Retired Rottweilers'} />
+      <Meta title={'Rottweiler Puppies'} />
       <Typography variant='h3' style={theme.pageHeading}>
         W Litter
       </Typography>

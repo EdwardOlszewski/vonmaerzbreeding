@@ -82,7 +82,7 @@ export default function RottBroodBitchesHome() {
 
   return (
     <div className='mainContainer'>
-      <Meta title={'Rottweiler Stud Dogs'} />
+      <Meta title={'Rottweiler Brood Bitches'} />
 
       <Tabs
         value={value}
